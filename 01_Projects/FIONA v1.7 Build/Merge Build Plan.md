@@ -1,111 +1,39 @@
----
-tags: [build, merge, pre-build, locked, 36-tasks]
-date-created: 2026-06-08
----
+### 37. Install Harrier Embedding System (NEW -- Pre-Merge Task)
+3-tier text embedding system replacing MiniLM. 94 languages, 32K context, up to 5,376 dims.
 
-# Merge Build Plan
-
-> **Pre-merge (you) -> Merge session (4-8hrs) -> 16-day build (system).**
-> Budget: $300-350 | Daily cap: $20 | Fable 5 reserve: $50-100
-
----
-
-## Phase 1: Pre-Merge Preparation (YOU DO NOW)
-
-### API Keys (All Verified)
-- [ ] OpenRouter API key -> test GPT-5.5, Kimi K2.6, V4-Pro, MiniMax M3
-- [ ] Vertex AI project ID -> test Claude Opus 4.8, Fable 5
-- [ ] NVIDIA NIM free dev key -> test Nemotron 3 Ultra 550B
-- [ ] Z.ai API key -> test GLM-5.1
-- [ ] Alibaba Cloud Model Studio -> test Qwen3.7
-- [ ] D-Wave Leap free trial -> apply at dwavesys.com/quantum-launchpad
-- [ ] GitHub Personal Access Token
-- [ ] Tavily, Exa, Firecrawl, Brave Search, E2B API keys
-
-### 36. Install GBrain (NEW -- Pre-Merge Task)
-GBrain is Garry Tan's (YC CEO) open-source agent memory system.
-
-**Install (2 minutes):**
+**Install (5 minutes):**
 ```bash
-# Install Bun runtime
-curl -fsSL https://bun.sh/install | bash
+pip install sentence-transformers
 
-# Install GBrain
-bun install -g github:garrytan/gbrain
+# Tier 1: Real-time (270M, 1GB VRAM, ~500 docs/s)
+ollama pull hf.co/Abiray/harrier-oss-v1-270m-GGUF
 
-# Initialize with embedded PGLite (no Docker needed)
-gbrain init --pglite
+# Tier 2: Batch (0.6B, 2GB VRAM, ~300 docs/s)
+ollama pull hf.co/Abiray/harrier-oss-v1-0.6b-GGUF
 
-# Import FionaVault
-gbrain import C:\Users\USER\OneDrive\Documents\FionaVault
-
-# Verify
-gbrain doctor
+# Tier 3: Deep weekly (27B Q4, 14GB VRAM, ~50 docs/s)
+ollama pull hf.co/Abiray/harrier-oss-v1-27b-GGUF:Q4_K_M
 ```
 
-**Configure MCP for all agents:**
-```bash
-# Claude Code
-claude mcp add gbrain -- gbrain serve
+**Configure in Supabase/Chroma:**
+```python
+# Replace MiniLM with Harrier 270M for real-time
+from sentence_transformers import SentenceTransformer
+embedding_model = SentenceTransformer("microsoft/harrier-oss-v1-270m")
 
-# Codex / Cursor / Windsurf -- add to mcpServers config
-# {
-#   "mcpServers": {
-#     "gbrain": {
-#       "command": "gbrain",
-#       "args": ["serve"]
-#     }
-#   }
-# }
+# For batch operations, use 0.6B
+batch_model = SentenceTransformer("microsoft/harrier-oss-v1-0.6b")
+
+# For weekly deep re-embedding, use 27B
+from transformers import AutoTokenizer, AutoModel
+deep_tokenizer = AutoTokenizer.from_pretrained("microsoft/harrier-oss-v1-27b")
+deep_model = AutoModel.from_pretrained("microsoft/harrier-oss-v1-27b", load_in_4bit=True)
 ```
 
-**Overnight cron (starts Day 1):**
-```bash
-# Runs at 3 AM daily
-gbrain sync --break-lock --all
-```
-
-**Build-time value:** 2-3 days saved (research synthesis, pattern reuse, contradiction detection)
-**Runtime value:** Client memory, taste learning, cross-project intelligence, agent shared memory
-**Cost:** FREE (open source)
+**Build-time value:** 2-3 days saved (research cross-verify, pattern reuse, AEGIS outlier detection)
+**Runtime value:** +40% taste accuracy, 94-language client memory, AEGIS self-improvement
+**Cost:** $0 (MIT license)
 **Risk:** LOW (additive, doesn't break existing stack)
 
 ---
 
-## Phase 2: Merge Session (4-8 hours)
-
-### Hour 0-1: Environment Setup
-- [ ] Upload all files to workspace
-- [ ] Verify all API keys (including Fable 5)
-- [ ] Install MCP servers (Context7, E2B, GitHub, GBrain)
-
-### Hour 1-2: Config Generation
-- [ ] Generate configs from vault content
-- [ ] Grind.ts hook (MAX_ITERATIONS=10 DCC / 5 standard)
-
-### Hour 2-3: AEGIS-99 Configuration
-- [ ] Configure model weights with Nemotron 3 Ultra 550B
-- [ ] Set thresholds (0.85 standard, 0.90 critical, 0.95 Module 68)
-- [ ] Configure F-GARP with Step 4b (Fable 5)
-
-### Hour 3-4: Fable 5 Integration
-- [ ] Test Fable 5 API connection
-- [ ] Verify activation protocol (Ashandy approval)
-- [ ] Test F-GARP Step 4b with sample deadlock
-
-### Hour 4-5: Overseer Configuration
-- [ ] Install Pi Agent + Goose
-- [ ] Configure shared JSONL log
-
-### Hour 5-6: GBrain Setup
-- [ ] Import vault to GBrain
-- [ ] Configure overnight cron
-- [ ] Test MCP connection
-
-### Hour 6-7: Research Stack
-- [ ] Context7 MCP (all 7 DCC tools)
-- [ ] GBrain capture test
-
-### Hour 7-8: Final Integration Test
-- [ ] Research -> Gen -> AEGIS -> Supervisors -> Cursor Gate
-- [ ] COMMIT: "Fiona v1.7 Merge Complete -- Ready for Build"
