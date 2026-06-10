@@ -6,7 +6,7 @@
       {
         "id": "64d73fd7e17980b8",
         "type": "tabs",
-        "dimension": 80.58252427184466,
+        "dimension": 30.583756345177665,
         "children": [
           {
             "id": "d339f325cf2f2c06",
@@ -27,7 +27,7 @@
       {
         "id": "91f3652b9053d2ea",
         "type": "tabs",
-        "dimension": 19.41747572815534,
+        "dimension": 69.41624365482234,
         "children": [
           {
             "id": "8da064f47a7816d7",
@@ -204,6 +204,15 @@
   },
   "active": "d339f325cf2f2c06",
   "lastOpenFiles": [
+    "03_Resources/Locked Summary.md",
+    "02_Areas/Architecture/Supervisor Configuration.md",
+    "02_Areas/Research/Universal Research Mandate.md",
+    "02_Areas/Build_Ops/Tier 1 & 2 Review.md",
+    "02_Areas/Build_Ops/Budget Breakdown.md",
+    "02_Areas/Build_Ops",
+    "01_Projects/FIONA v1.7 Build/Merge Build Plan.md",
+    "01_Projects/FIONA v1.7 Build",
+    "README.md",
     "02_Areas/Model Management/Model Roster.md",
     "02_Areas/Architecture/AEGIS-99 Consensus Engine.md",
     "index.md",
@@ -217,8 +226,6 @@
     "07_Templates/Research_Brief",
     "07_Templates/Skill_Template",
     "07_Templates/Module_Template",
-    "07_Templates",
-    "06_Dashboards/Virus_Database",
-    "06_Dashboards/Research_Index"
+    "07_Templates"
   ]
 }
