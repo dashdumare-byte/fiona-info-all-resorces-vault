@@ -1,69 +1,156 @@
 ---
-tags: [models, roster, api-strings, locked, reference]
+tags: [models, roster, api-strings, locked, reference, 3-tier]
 date-created: 2026-06-06
+date-updated: 2026-07-22
 source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 ---
 
-# Model Roster
+# Model Roster — 3-Tier AEGIS-99 System
 
 > **Complete reference for all 20+ models in the FIONA ecosystem.**
-> Last updated: 2026-06-08 (Nemotron 3 Ultra 550B + MiniMax M3 open-source upgrades applied)
+> **Architecture: 3-Tier AEGIS-99 (L1 Free → L2 Standard → L3 Premium → Nuclear)**
+> Last updated: 2026-07-22 (GPT-5.6, Fable 5, Kimi K3, Ornith, Tencent Hy3, Laguna XS 2.1, Gemma 4 added)
 
 ---
 
-## AEGIS-99 Consensus (Quality Gate)
+## Tier Architecture Overview
 
-| Model | String | Weight | Role |
-|-------|--------|--------|------|
-| Nemotron 3 Ultra 550B | `nvidia/nemotron-3-ultra-550b` | 20% | Architect Primary |
-| GPT-5.5 | `openai/gpt-5.5` | 15% | Architect Co-Primary |
-| DeepSeek V4-Pro | `deepseek-v4-pro` | 15% | Architect Co-Primary |
-| D-Wave Leap | `d-wave-leap-api` | 15% | Quantum |
-| MiniMax M3 | `minimax/minimax-m3` | 15% | Auditor 1 |
-| Qwen3.7-Max-Preview | `qwen3.7-max-preview` | 10% | Auditor 2 |
+| Tier | Models | Cost | When Used |
+|------|--------|------|-----------|
+| **L1 Free** | 6 models (NIM + self-hosted + free APIs) | **$0** | Simple tasks, high volume, Ashandy says "use free" |
+| **L2 Standard** | 11 models (L1 + paid tier) | **~$40-60/mo** | Default for most tasks, auto for complex |
+| **L3 Premium** | 16 models (L2 + premium) | **~$80-120/mo** | Ashandy says "use L3" or AEGIS-99 detects critical |
+| **Nuclear** | All 20+ models in parallel | **~$150-250/mo** | Ashandy approval ONLY — catastrophic scenarios |
 
----
-
-## Critical Pool (9 Models — Critical Modules + DCC Adapters + Web App)
-
-| Pass | Model | String | Context | Role |
-|------|-------|--------|---------|------|
-| 0-Extra | Claude Opus 4.8 | `claude-opus-4-8` | 1M/128k | Critical architecture, visual |
-| 1 | GPT-5.5 | `openai/gpt-5.5` | 1.05M | Speed + adversarial |
-| 2 | Qwen3.7-Max-Preview | `qwen3.7-max-preview` | 260K | Web/UI code |
-| 3 | MiniMax M3 | `minimax/minimax-m3` | 256K | Multimodal + DCC |
-| 4 | **GLM-5.2** | `z-ai/glm-5.2` | **1.05M** | **Coding brain (lead)** |
-| 4b | GLM-5.1 | `z-ai/glm-5.1` | 192K | Coding brain (fallback) |
-| 5 | Kimi K2.7 | `moonshotai/moonshotai/kimi-k2.7` | 256K | Cleanup + edge cases |
-| 6 | DeepSeek V4-Pro | `deepseek-v4-pro` | 1M | Raw code volume |
-| 7 | D-Wave Quantum | `d-wave-leap-api` | — | Strategy + optimize |
-| 8 | GPT-5.5 Pro | `openai/gpt-5.5-pro` | 1.05M | EXTREME fallback only |
+**Auto-escalation:** L1→L2 when task complexity > threshold. L2→L3 when stakes > threshold. **NO auto L3→Nuclear** — requires human approval.
 
 ---
 
-## Standard Pool (8 Models — Standard Modules)
+## L1 FREE (6 Models) — $0 Cost
 
-| Pass | Model | String | Context | Role |
-|------|-------|--------|---------|------|
-| 0 | Claude Opus 4.6 | `claude-opus-4-6` | 1M/128k | Standard modules |
-| 1 | GPT-5.5 | `openai/gpt-5.5` | 1.05M | Speed + adversarial |
-| 2 | Qwen3.7-Max-Preview | `qwen3.7-max-preview` | 260K | Web/UI |
-| 3 | MiniMax M3 | `minimax/minimax-m3` | 256K | Multimodal |
-| 4 | **GLM-5.2** | `z-ai/glm-5.2` | **1.05M** | **Coding brain** |
-| 4b | GLM-5.1 | `z-ai/glm-5.1` | 192K | Coding brain (fallback) |
-| 5 | Kimi K2.7 | `moonshotai/moonshotai/kimi-k2.7` | 256K | Cleanup |
-| 6 | DeepSeek V4-Pro | `deepseek-v4-pro` | 1M | Raw generation |
-| 7 | D-Wave Quantum | `d-wave-leap-api` | — | Strategy |
+> Ashandy says "use free" OR simple/volume tasks. All free via NIM credits, self-hosted, or free OpenRouter tier.
+
+| # | Model | String | Context | Role | How It's Free |
+|---|-------|--------|---------|------|---------------|
+| 1 | **Nemotron 3 Ultra 550B** | `nvidia/nemotron-3-ultra-550b` (NIM) | 1M | Architect, AEGIS primary | NVIDIA NIM free dev credits |
+| 2 | **MiniMax M3** | `minimax/minimax-m3` (NIM) | 1M | Multimodal, image+video | NVIDIA NIM free dev credits |
+| 3 | **Ornith 1.0-35B MoE** | Self-hosted via vLLM | 262K | Coding specialist, local | Self-hosted on Lightning.ai (free compute) |
+| 4 | **Tencent Hy3** | `tencent/hy3` (OpenRouter) | 262K | Configurable reasoning, logic | FREE on OpenRouter |
+| 5 | **Poolside Laguna XS 2.1** | `poolside/laguna-xs-2.1` (OpenRouter) | 262K | Fast coding agent | FREE on OpenRouter |
+| 6 | **Gemma 4 26B** | `gemma4:26b` (Ollama) | 256K | Syntax/PEP8/lint, basic logic | Local via Ollama |
+
+### L1 Model Specs
+
+| Model | Params | Speed | VRAM (Q4) | SWE-Bench |
+|-------|--------|-------|-----------|-----------|
+| Nemotron 3 Ultra | 550B/55B active | 180 TPS | N/A (cloud) | 81.6 |
+| MiniMax M3 | 428B | 240 TPS | N/A (cloud) | 73.8 |
+| Ornith-35B MoE | 35B/~3B active | 120 TPS | 25GB | 75.6 |
+| Tencent Hy3 | 295B/21B active | 100 TPS | N/A (cloud) | 71.2 |
+| Poolside Laguna XS 2.1 | 33B | 200 TPS | N/A (cloud) | 68.4 |
+| Gemma 4 26B | 26B/3.8B active | 60 TPS | 15.6GB | 77.1 |
 
 ---
 
-## Supervisors (3)
+## L2 STANDARD (11 Models) — ~$40-60/mo
+
+> **Default tier.** Auto-selected for most tasks. Includes all L1 models + 5 paid models.
+
+| # | Model | String | Context | Role | Cost (per 1M out) |
+|---|-------|--------|---------|------|-------------------|
+| 7 | **GPT-5.6 Terra** | `openai/gpt-5.6-terra` | 1.05M | Speed + adversarial, general purpose | $15 |
+| 8 | **Kimi K2.7** | `moonshotai/kimi-k2.7` | 256K | Cleanup, edge cases, high-speed coding | $4 |
+| 9 | **Grok 4.5** | `x-ai/grok-4.5` | 500K | Volume coding, 80 TPS speed mode | $6 |
+| 10 | **GLM-5.2** | `z-ai/glm-5.2` | 1.05M | **Coding brain (lead)** | $3 |
+| 10b | GLM-5.1 (fallback) | `z-ai/glm-5.1` | 192K | Coding brain (fallback) | $2.86 |
+| 11 | **Qwen3.7-Max** | `qwen3.7-max-preview` | 260K | Web/UI code, agent-centric | $1.60 |
+
+### L2 Model Specs
+
+| Model | SWE-Bench Pro | Terminal-Bench | DeepSWE 1.1 | Speed (TPS) |
+|-------|---------------|----------------|-------------|-------------|
+| GPT-5.6 Terra | ~60% (est) | 87.4% | ~58% (est) | ~35 |
+| Kimi K2.7 | 54.0% | 86.0% | 52.0% | 260 (highspeed) |
+| Grok 4.5 | 64.7% | 83.3% | 53.0% | 80 |
+| GLM-5.2 | 58.0% | 84.0% | 55.0% | 90 |
+| Qwen3.7-Max | 52.0% | 80.0% | 48.0% | 120 |
+
+---
+
+## L3 PREMIUM (16 Models) — ~$80-120/mo
+
+> **High-value tier.** Ashandy says "use L3" OR AEGIS-99 detects critical stakes. Includes all L1 + L2 models + 5 premium models.
+
+| # | Model | String | Context | Role | Cost (per 1M out) |
+|---|-------|--------|---------|------|-------------------|
+| 12 | **GPT-5.6 Sol** | `openai/gpt-5.6-sol` | 1.05M | Deep analysis, agentic tasks | $30 |
+| 12u | GPT-5.6 Sol Ultra | `openai/gpt-5.6-sol` (ultra mode) | 1.05M | 4 parallel agents, nuclear tasks | $90 (3x) |
+| 13 | **Fable 5** | `anthropic/fable-5` (Anthropic API) | 1M | **Deep creative analysis, reasoning SOTA** | $25 |
+| 14 | **Opus 4.8** | `anthropic/claude-opus-4.8` | 1M | Visual architecture, critical coding, Fable 5 Lite backup | $25 |
+| 15 | **DeepSeek V4-Pro** | `deepseek/deepseek-v4-pro` | 1.05M | Raw code volume, long-horizon | $8 |
+| 16 | **Kimi K3** | `moonshotai/kimi-k3` | 1.05M | Large-context coding, frontend/design, multimodal | $15 |
+
+### L3 Model Specs
+
+| Model | SWE-Bench Pro | Terminal-Bench | Agents' Last Exam | Key Feature |
+|-------|---------------|----------------|-------------------|-------------|
+| GPT-5.6 Sol | 64.6% | 88.8% | 53.6% | Agentic SOTA, 4-agent ultra mode |
+| Fable 5 | 72.0% | 91.0% | 58.0% | Reasoning SOTA, deep creative analysis |
+| Opus 4.8 | 69.2% | 78.9% | 45.2% | Visual + coding, most proven |
+| DeepSeek V4-Pro | 64.3% | 83.4% | 46.9% | 1.05M context, hybrid attention |
+| Kimi K3 | ~62% (est) | 85.0% (est) | ~50% (est) | 1M context, frontend #1, vision-in-loop |
+
+---
+
+## NUCLEAR (All 20+ Models Parallel) — ~$150-250/mo
+
+> **Ashandy approval ONLY.** No auto-escalation to nuclear. All models run in parallel, AEGIS-99 consensus at highest threshold.
+
+**Trigger conditions (Ashandy must explicitly approve):**
+- Catastrophic system failure requiring all models
+- Final 69-module integration validation
+- Client-critical deadline with zero tolerance
+- Sovereign Protocol full activation
+
+**Execution:** GPT-5.6 Sol Ultra (4 parallel agents) + all L1/L2/L3 models simultaneously. AEGIS-99 >=0.95 consensus required.
+
+---
+
+## Fable 5 API Setup
+
+**Status:** Available via Anthropic API key (API access restored July 2026)
+
+| Requirement | Value |
+|-------------|-------|
+| API Key | Anthropic API key (not OpenRouter) |
+| Endpoint | `https://api.anthropic.com/v1/messages` |
+| Model ID | `claude-sonnet-fable-5-20250701` |
+| Context | 1M tokens |
+| Cost | $25/M output |
+| Tier | **L3 Premium** — deep creative analysis |
+| Backup | Opus 4.8 + Fable behavioral prompt (Fable 5 Lite) |
+
+```bash
+# Test Fable 5 API
+curl https://api.anthropic.com/v1/messages \
+  -H "x-api-key: $ANTHROPIC_API_KEY" \
+  -H "anthropic-version: 2023-06-01" \
+  -d '{
+    "model": "claude-sonnet-fable-5-20250701",
+    "max_tokens": 4096,
+    "messages": [{"role": "user", "content": "Test"}]
+  }'
+```
+
+---
+
+## Supervisors (3) — Cross-Tier
 
 | # | Tool | Models | Config | Role |
 |---|------|--------|--------|------|
-| 1 | Claude Code | Opus 4.8 / 4.6 + Sonnet | CLAUDE.md | Production code, bugs, refactor, memory, security, DCC gate |
-| 2 | Codex | GPT-5.5 + plugin | AGENTS.md | Validate AEGIS-99, code quality, cross-check, flag deadlock |
-| 3 | OpenCode | Qwen3.7 + Nemotron | opencode.json | Independent review, alternative impl, edge cases, Lean4 proof |
+| 1 | Claude Code | Opus 4.8 / Fable 5 + Sonnet | CLAUDE.md | Production code, bugs, refactor, memory, security, DCC gate |
+| 2 | Codex | GPT-5.6 Sol/Terra + plugin | AGENTS.md | Validate AEGIS-99, code quality, cross-check, flag deadlock |
+| 3 | OpenCode | Qwen3.7 + Nemotron | opencode.json | Independent review, alternative impl, edge cases |
 
 ---
 
@@ -78,77 +165,13 @@ Shared: 8 objectives, log to shared JSONL, escalate on 5th failure, report every
 
 ---
 
-## Tier 1 Review (Free/Local)
-
-| Model | String | Context | Role | GPU RAM |
-|-------|--------|---------|------|---------|
-| **Gemma 4 26B A4B MoE** | `gemma4:26b` (Ollama) | 256K | Syntax/PEP8/lint/basic logic | ~15.6GB (Q4_0) |
-
-### Specs (Confirmed April 2, 2026 Release)
-| Attribute | Value |
-|-----------|-------|
-| **Total params** | 25.2B |
-| **Active params** | 3.8B (MoE — fast inference) |
-| **Context window** | 256K tokens |
-| **License** | Apache 2.0 (commercially permissive) |
-| **LiveCodeBench v6** | 77.1% |
-| **AIME 2026** | 88.3% |
-| **GPQA Diamond** | 82.3% |
-| **Multimodal** | Text + Image |
-
-### Optional Upgrade: Gemma 4 31B Dense
-| Attribute | Value |
-|-----------|-------|
-| **Total params** | 30.7B dense |
-| **Context window** | 256K tokens |
-| **LiveCodeBench v6** | 80.0% |
-| **GPU RAM** | ~17.4GB (Q4_0) |
-| **Use** | If 26B quality insufficient; ~3% better coding |
-
-### Ollama Setup
-```bash
-ollama pull gemma4:26b
-# Optional upgrade:
-# ollama pull gemma4:31b
-```
-
----
-
-## Runtime Task Routing
-
-### Simple Tasks (<2s)
-| Model | String | Role |
-|-------|--------|------|
-| Kimi K2.7 | `moonshotai/moonshotai/kimi-k2.7` | Front-facing primary |
-| MiniMax M3 | NIM endpoint | Front-facing dual |
-
-### Standard Tasks (<10s)
-Same as Simple + AEGIS-99 mandatory >=0.85
-
-### Coding Tasks (<30s)
-| Priority | Model | String | Role |
-|----------|-------|--------|------|
-| HIGHEST | **GLM-5.2** | `z-ai/glm-5.2` | **Coding lead** |
-| HIGH | GLM-5.1 | `z-ai/glm-5.1` | Coding lead (fallback) |
-| HIGH | Qwen3.7-Max | `qwen3.7-max-preview` | Web/UI |
-| CRITICAL | Claude Opus 4.8 | `claude-opus-4-8` | Client-facing |
-| PARALLEL | Kimi K2.7 | `moonshotai/moonshotai/kimi-k2.7` | Long-context |
-| SPECIAL | Mistral-small | NIM endpoint | Logic/multimodal |
-| PARALLEL | MiMo-V2-Pro | `xiaomi/mimo-v2-pro` | Coding brain |
-
-### Critical Tasks (minutes/hours)
-ALL 9 build models + all supervisors + quantum + overseers. AEGIS >=0.90.
-
----
-
-## NVIDIA NIM Free Models (Runtime Only)
+## NVIDIA NIM Free Models (L1 Runtime)
 
 | Model | Endpoint | Runtime Role |
 |-------|----------|--------------|
-| Nemotron 3 Ultra 550B | NIM | AEGIS architect (NEW — replaces Super) |
-| Nemotron 3 Super 120B | NIM | AEGIS fallback (deprecated, use Ultra) |
+| Nemotron 3 Ultra 550B | NIM | AEGIS architect |
 | MiniMax M3 | NIM | Multimodal |
-| **GLM-5.2** | NIM | **Coding brain (lead)** |
+| **GLM-5.2** | NIM | Coding brain (lead) |
 | GLM-5.1 | NIM | Coding brain (fallback) |
 | GLM-4.7 | NIM | Fallback |
 | DeepSeek V4 Flash | NIM | Fast coding |
@@ -164,78 +187,107 @@ ALL 9 build models + all supervisors + quantum + overseers. AEGIS >=0.90.
 
 ## API Key Requirements
 
-| Model/Source | Key Needed | Where |
-|-------------|------------|-------|
-| GPT-5.5 / GPT-5.5 Pro | OpenRouter API key | openrouter.ai |
-| Kimi K2.7 | OpenRouter or Moonshot API key | openrouter.ai / moonshot.cn |
-| DeepSeek V4-Pro | OpenRouter API key | openrouter.ai |
-| MiniMax M3 | OpenRouter API key OR self-hosted weights | openrouter.ai / local |
-| Claude Opus 4.8 | Vertex AI project ID | cloud.google.com |
-| Claude Opus 4.6 | Vertex AI (primary) / AWS Bedrock (fallback) | cloud.google.com |
-| **GLM-5.2** (GLM-5.1 fallback) | Z.ai API key | z.ai |
-| Qwen3.7-Max-Preview | Alibaba Cloud Model Studio | alibabacloud.com |
-| Nemotron 3 Ultra 550B | NVIDIA NIM free dev key | build.nvidia.com |
-| D-Wave Leap | D-Wave account (free LaunchPad) | dwavesys.com |
-| Gemma 4 26B | Ollama (local) | ollama.ai |
+| Model/Source | Key Needed | Where | Tier |
+|-------------|------------|-------|------|
+| GPT-5.6 Sol / Terra | OpenRouter API key | openrouter.ai | L2/L3 |
+| Kimi K2.7 / K3 | OpenRouter or Moonshot API key | openrouter.ai / moonshot.cn | L2/L3 |
+| DeepSeek V4-Pro | OpenRouter API key | openrouter.ai | L2/L3 |
+| MiniMax M3 | OpenRouter API key OR self-hosted weights | openrouter.ai / local | L1 |
+| Claude Opus 4.8 | Vertex AI project ID | cloud.google.com | L3 |
+| **Fable 5** | **Anthropic API key** | **anthropic.com** | **L3** |
+| **GLM-5.2** (GLM-5.1 fallback) | Z.ai API key | z.ai | L2 |
+| Qwen3.7-Max-Preview | Alibaba Cloud Model Studio | alibabacloud.com | L2 |
+| Nemotron 3 Ultra 550B | NVIDIA NIM free dev key | build.nvidia.com | L1 |
+| Tencent Hy3 | OpenRouter (FREE tier) | openrouter.ai | L1 |
+| Poolside Laguna XS 2.1 | OpenRouter (FREE tier) | openrouter.ai | L1 |
+| Ornith-35B MoE | Self-hosted (vLLM on Lightning.ai) | local | L1 |
+| Gemma 4 26B | Ollama (local) | ollama.ai | L1 |
+| D-Wave Leap | D-Wave account (free LaunchPad) | dwavesys.com | Quantum |
 
 ---
 
 ## Key Distinctions (Prevent Mix-Ups)
 
-1. **MiniMax M3 vs M2.5**: M3 = build + runtime critical. M2.5 = runtime front-facing NIM fallback.
-2. **Claude Opus 4.8 vs 4.6**: 4.8 = critical modules + supervisor. 4.6 = standard modules.
-3. **Kimi K2.7**: Build cleanup (Pass 5) + runtime simple/standard front-facing + long-context coding.
-4. **GLM-5.2 vs GLM-5.1 vs GLM-5 NIM**: GLM-5.2 = build + runtime coding lead (1.05M context). GLM-5.1 = coding fallback (192K). GLM-5 NIM = runtime NIM fallback only.
-5. **Quantum**: D-Wave = PRIMARY (annealing, optimization). Origin = SECONDARY (gate-model, backup).
-6. **Supervisors vs Overseers**: Supervisors (3) review code AFTER AEGIS-99. Overseers (2) monitor 24/7.
-7. **GPT-5.5 Pro**: EXTREME fallback only (~5% usage). Ashandy approval required.
+1. **MiniMax M3 vs M2.5**: M3 = L1 free multimodal. M2.5 = deprecated, do not use.
+2. **Claude Opus 4.8 vs Fable 5**: Opus 4.8 = visual + coding. Fable 5 = deep creative analysis + reasoning. Both L3.
+3. **Kimi K2.7 vs K3**: K2.7 = L2 standard, high-speed ($4), 256K context. K3 = L3 premium, large-context ($15), 1M context. NOT the same model.
+4. **GLM-5.2 vs GLM-5.1 vs GLM-5 NIM**: GLM-5.2 = L2 coding lead (1.05M). GLM-5.1 = L2 coding fallback (192K). GLM-5 NIM = L1 runtime fallback only.
+5. **GPT-5.6 Terra vs Sol**: Terra = L2 standard ($15), half cost of GPT-5.5. Sol = L3 premium ($30), agentic SOTA. Both replace GPT-5.5.
+6. **Fable 5 vs Fable 5 Lite**: Fable 5 = real model on Anthropic API (L3). Fable 5 Lite = Opus 4.8 + behavioral prompt (backup only).
+7. **Supervisors vs Overseers**: Supervisors (3) review code AFTER AEGIS-99. Overseers (2) monitor 24/7.
+8. **GPT-5.6 Sol Ultra**: EXTREME fallback only (3x cost). Nuclear tier only. Ashandy approval required.
+9. **L1 Gemma 4 26B vs 31B**: 26B = default (15.6GB VRAM). 31B = upgrade if quality insufficient (17.4GB VRAM).
+10. **Nuclear tier**: Ashandy explicit approval ONLY. No auto-escalation from L3. Say "go nuclear" to activate.
 
 ---
 
----
+## 3-Tier AEGIS-99 Consensus Weights
 
-## Major Model Upgrades (June 2026)
+### L1 Voting Weights (Free Models Only)
 
-### Nemotron 3 Ultra 550B (June 4, 2026) — UPGRADE APPLIED
+| Model | Weight | Specialty |
+|-------|--------|-----------|
+| Nemotron 3 Ultra | 30% | Architecture, logic |
+| MiniMax M3 | 20% | Multimodal, audit |
+| Ornith-35B | 15% | Coding patterns |
+| Tencent Hy3 | 15% | Reasoning |
+| Poolside Laguna XS 2.1 | 10% | Fast coding |
+| Gemma 4 26B | 10% | Syntax, lint |
 
-| Spec | Nemotron 3 Super (OLD) | Nemotron 3 Ultra (NEW) |
-|------|----------------------|----------------------|
-| Parameters | 120B | **550B (55B active MoE)** |
-| Context | 1M | **1M** |
-| Speed | ~100 t/s | **300+ t/s** |
-| Intelligence Index | 36 | **48 (#1 US open)** |
-| License | Nemotron Open | **OpenMDW 1.1 (Linux Foundation)** |
-| Weights | Open | **Fully open on Hugging Face** |
-| Training data | Partial | **Published (2.5T tokens)** |
-| Architecture | Transformer | **Hybrid Mamba-Attention + LatentMoE + MTP** |
-| Cost | FREE on NIM | **FREE on NIM** |
+### L2 Voting Weights (Standard)
 
-**FIONA Impact**: Replaces Super as AEGIS-99 architect primary (20% weight). Same weight, dramatically more capable. 300 t/s means faster consensus rounds. Agentic optimization = better multi-step reasoning. Open weights = future self-hosting option.
+| Model | Weight | Specialty |
+|-------|--------|-----------|
+| GPT-5.6 Terra | 20% | General purpose |
+| Kimi K2.7 | 15% | High-speed coding |
+| GLM-5.2 | 15% | Coding brain |
+| Grok 4.5 | 10% | Volume coding |
+| Qwen3.7-Max | 10% | Web/UI |
+| L1 models (combined) | 30% | Baseline |
 
-**API String**: `nvidia/nemotron-3-ultra-550b` (NIM)
-**Also available**: OpenRouter, Hugging Face, ModelScope
-**Action**: Test string on NIM during merge session. Update all references from Super to Ultra.
+### L3 Voting Weights (Premium)
 
-### MiniMax M3 Open Source (June 1, 2026) — UPGRADE APPLIED
+| Model | Weight | Specialty |
+|-------|--------|-----------|
+| GPT-5.6 Sol | 15% | Agentic tasks |
+| Fable 5 | 15% | Deep creative analysis |
+| Opus 4.8 | 15% | Visual + critical coding |
+| DeepSeek V4-Pro | 15% | Raw code volume |
+| Kimi K3 | 10% | Large-context coding |
+| L2 models (combined) | 30% | Baseline |
 
-| Spec | Previous M2.7 | MiniMax M3 (Now Open) |
-|------|--------------|----------------------|
-| Architecture | Standard | **MiniMax Sparse Attention (MSA)** |
-| Context | 256K | **1M tokens** |
-| Multimodal | No | **Native text + image + video** |
-| Open weights | No | **YES (published ~10 days post-launch)** |
-| SWE-Bench Pro | ~45% | **59.0%** |
-| Terminal-Bench | ~50% | **66.0%** |
-| Speed at 1M | Baseline | **9x prefill, 15x decode** |
-| Cost | OpenRouter API | **API: $0.30/M in, $1.20/M out OR self-host: $0** |
-| License | Proprietary | **Open weights (commercial conditions apply)** |
+### Nuclear Consensus (All Models)
 
-**FIONA Impact**: M3 was already locked in at 15% auditor weight. Open-source changes the economics. Self-hosting option for zero inference cost. Native multimodal enables image/video input for research Pass 3.
-
-**API String**: `minimax/minimax-m3` (OpenRouter — unchanged)
-**Self-host option**: Weights on Hugging Face → vLLM/SGLang on Lightning.ai
-**Action**: Keep OpenRouter for build. Evaluate self-hosting Day 15-16 or runtime.
+All 20+ models vote. AEGIS-99 >=0.95 required. GPT-5.6 Sol Ultra coordinates 4 parallel subagents.
 
 ---
 
-*See also: [[AEGIS-99 Consensus Engine]], [[Smart Routing]], [[Supervisor Configuration]], [[Overseer Configuration]], [[Universal Research Mandate]]*
+## Auto-Escalation Rules
+
+| From | To | Trigger | Cost Impact |
+|------|-----|---------|-------------|
+| L1 | L2 | Task complexity > 0.7 OR time > 30s | +$0.01-0.05/call |
+| L2 | L3 | Stakes = critical OR Ashandy says "L3" | +$0.10-0.50/call |
+| L3 | Nuclear | **Ashandy says "go nuclear" ONLY** | +$5-20/call |
+
+**De-escalation:** After task completes, auto-return to default tier (L2). No lingering in premium tiers.
+
+---
+
+## Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-06-06 | Initial model roster (v4.1) |
+| 2026-06-12 | Nemotron 3 Ultra 550B replaces Super |
+| 2026-06-12 | MiniMax M3 open-source replaces M2.7 |
+| 2026-06-18 | GLM 5.2 replaces GLM 5.1 as coding lead |
+| 2026-07-08 | DCC versions updated (UE 5.8, Blender 5.2.0, C4D 2026.3.2) |
+| 2026-07-14 | 16-day → 30-day build timeline |
+| 2026-07-22 | **3-Tier AEGIS-99 system implemented** |
+| 2026-07-22 | GPT-5.6 Sol/Terra/Luna added |
+| 2026-07-22 | Fable 5 restored to L3 Premium |
+| 2026-07-22 | Kimi K3 added to L3 Premium |
+| 2026-07-22 | Ornith-35B, Tencent Hy3, Poolside Laguna XS 2.1, Gemma 4 added to L1 |
+| 2026-07-22 | Grok 4.5 added to L2 Standard |
+| 2026-07-22 | Kimi K2.7 upgraded from K2.6 |

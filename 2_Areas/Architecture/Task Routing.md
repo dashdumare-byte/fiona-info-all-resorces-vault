@@ -14,7 +14,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 8
 
 | Attribute | Value |
 |-----------|-------|
-| **Models** | Kimi K2.7 + MiniMax M3 (dual) |
+| **Models** | L1: MiniMax M3 + Gemma 4 + Ornith-35B | L2: + Kimi K2.7 + GPT-5.6 Terra + GLM-5.2 | L3: + Fable 5 + Kimi K3 |
 | **AEGIS-99** | Optional |
 | **Research** | Minimal (Kimi fast scan) |
 | **Supervisors** | None |
@@ -28,7 +28,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 8
 
 | Attribute | Value |
 |-----------|-------|
-| **Models** | Kimi K2.7 + MiniMax M3 -> AEGIS-99 |
+| **Models** | L1 models -> AEGIS-99 (L1 weights) | L2 models -> AEGIS-99 (L2 weights) | L3 models -> AEGIS-99 (L3 weights) |
 | **AEGIS-99** | Mandatory >=0.85 |
 | **Research** | Standard (2-model) |
 | **Supervisors** | None |

@@ -32,7 +32,7 @@ Nemotron 3 Ultra 550B 20% (NEW — 300 t/s, open weights, #1 US) | GPT-5.5 15% |
 Threshold: >=0.85 standard | >=0.90 critical | >=0.95 Module 68
 
 ### 9-Model Critical Pool
-Opus 4.8 (visual/arch) | GPT-5.5 (adversarial) | Qwen3.7 (web/UI) | MiniMax M3 (multimodal, image+video) | **GLM-5.2** (coding brain) | Kimi K2.7 (comprehensive) | DeepSeek V4-Pro (raw gen) | D-Wave Quantum (strategy) | GPT-5.5 Pro (extreme fallback)
+Opus 4.8 (visual/arch) | Fable 5 (creative) | GPT-5.6 Sol (agentic) | Qwen3.7 (web/UI) | MiniMax M3 (multimodal, image+video) | **GLM-5.2** (coding brain) | Kimi K2.7 (comprehensive) | DeepSeek V4-Pro (raw gen) | D-Wave Quantum (strategy) | GPT-5.5 Pro (extreme fallback)
 
 ### 3 Supervisors
 Claude Code (Opus 4.8/4.6) | Codex (GPT-5.5) | OpenCode (Qwen3.7 + Nemotron)
@@ -67,7 +67,7 @@ M1 UTM | M11 Orchestrator | AEGIS-99 Engine | Security | Memory Manager | DCC Ba
 + M69 Web App (also critical, Day 10)
 
 ### Budget
-Build: $250-300 (30 days, $10/day cap) | Runtime: $200-250/month
+Build: $300 (30 days, $10/day) | 3-Tier: L1$0 L2$50 L3$100 | Runtime: $200-250/month
 
 ### Timeline
 Days 1-3: Infrastructure | Days 4-7: DCC adapters | Day 8: Integration | Day 9: B4D Grillz | Day 10: Web App | Days 11-14: Standard modules | Days 15-16: Integration + deploy
