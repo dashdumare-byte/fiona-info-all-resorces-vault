@@ -13,7 +13,7 @@ Nemotron 3 Ultra 550B 20% (NEW -- 300 t/s, open weights, #1 US) | GPT-5.5 15% | 
 Threshold: >=0.85 standard | >=0.90 critical | >=0.95 Module 68
 
 ## 9-Model Critical Pool
-Opus 4.8 | GPT-5.5 | Qwen3.7 | MiniMax M3 (multimodal, image+video) | GLM-5.1 | Kimi K2.6 | DeepSeek V4-Pro | D-Wave Quantum | GPT-5.5 Pro
+Opus 4.8 | GPT-5.5 | Qwen3.7 | MiniMax M3 (multimodal, image+video) | GLM-5.1 | Kimi K2.7 | DeepSeek V4-Pro | D-Wave Quantum | GPT-5.5 Pro
 
 ## Claude Fable 5 (NEW -- June 9, 2026)
 Mythos-class, SWE-Bench Pro 80.3%, $10/M input. EXTREME fallback, Ashandy approval. F-GARP Step 4b.

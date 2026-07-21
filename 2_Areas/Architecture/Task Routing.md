@@ -14,7 +14,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 8
 
 | Attribute | Value |
 |-----------|-------|
-| **Models** | Kimi K2.6 + MiniMax M3 (dual) |
+| **Models** | Kimi K2.7 + MiniMax M3 (dual) |
 | **AEGIS-99** | Optional |
 | **Research** | Minimal (Kimi fast scan) |
 | **Supervisors** | None |
@@ -28,7 +28,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 8
 
 | Attribute | Value |
 |-----------|-------|
-| **Models** | Kimi K2.6 + MiniMax M3 -> AEGIS-99 |
+| **Models** | Kimi K2.7 + MiniMax M3 -> AEGIS-99 |
 | **AEGIS-99** | Mandatory >=0.85 |
 | **Research** | Standard (2-model) |
 | **Supervisors** | None |
@@ -52,7 +52,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 8
 | **Examples** | Python scripts, React components, debugging |
 
 ### Default Coding Brain
-**GLM-5.2** (lead) + GLM-5.1 (fallback) + Qwen3.7 + Kimi K2.6 + Mistral-small + MiMo-V2-Pro
+**GLM-5.2** (lead) + GLM-5.1 (fallback) + Qwen3.7 + Kimi K2.7 + Mistral-small + MiMo-V2-Pro
 
 ### Difficult Coding Brain (+ added)
 + Claude Opus 4.8 + GPT-5.5

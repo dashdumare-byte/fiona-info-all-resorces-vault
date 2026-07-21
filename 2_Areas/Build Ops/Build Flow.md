@@ -64,7 +64,7 @@ SHIP / FAIL
 
 ## Step 1: Pre-Module Research
 
-- Kimi K2.6 Agent mode + DeepResearcher
+- Kimi K2.7 Agent mode + DeepResearcher
 - Now informed by MASTER BRIEF from Step 0
 - Module-specific deep dive
 - Cost: ~$0.15 per module

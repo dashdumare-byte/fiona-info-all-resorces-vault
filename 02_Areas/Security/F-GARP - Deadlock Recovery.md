@@ -1,7 +1,7 @@
 ---
 tags: [security, risk-3, f-garp, deadlock, consensus, closed, layer-2]
 date-created: 2026-06-08
-source: FIONA_R3_R6_RIGOROUS_CROSS_ANALYSIS.md + 3-model research (Opus 4.7, Gemini 3.5, Kimi K2.6)
+source: FIONA_R3_R6_RIGOROUS_CROSS_ANALYSIS.md + 3-model research (Opus 4.7, Gemini 3.5, Kimi K2.7)
 ---
 
 # F-GARP: FIONA Graduated Autonomous Recovery Protocol

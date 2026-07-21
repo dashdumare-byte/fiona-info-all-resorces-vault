@@ -12,7 +12,7 @@
 | Claude Opus 4.8 | ~1.5T | 1M | May 2026 | Dense, visual+text |
 | Claude Opus 4.7 | ~1.5T | 1M | Apr 2026 | Dense, async agents |
 | Claude Opus 4.6 | ~1.5T | 1M | Feb 2026 | Dense, coding leader |
-| Kimi K2.6 | 1T/32B active | 262K | Apr 2026 | MoE, multimodal |
+| Kimi K2.7 | 1T/32B active | 262K | Apr 2026 | MoE, multimodal |
 | Kimi K2.7 Code | 1T/32B active | 262K | Jun 2026 | MoE, coding specialist |
 | DeepSeek V4-Pro | 1.6T/49B active | 1.05M | Apr 2026 | MoE, hybrid attention |
 | DeepSeek V4-Flash | 284B/13B active | 1.05M | Apr 2026 | MoE, fast inference |
@@ -105,7 +105,7 @@
 59. **GLM-5.2 (744B)** — 2026-06 — MoE, coding brain lead, 1.05M context
 59b. GLM-5.1 (744B) — 2025-10 — MoE, long-horizon (fallback)
 60. Qwen3.6 (35B-A3B) — 2025-10 — MoE, multimodal
-61. Kimi K2.6 (1T/32B) — 2026-04 — MoE, agent swarm
+61. Kimi K2.7 (1T/32B) — 2026-04 — MoE, agent swarm
 62. Qwen3.6 (27B) — 2026-04 — Dense, multimodal
 63. Xiaomi MiMo-V2.5 (310B) — 2026-04 — MoE
 64. Xiaomi MiMo-V2.5-Pro (1.02T) — 2026-04 — MoE

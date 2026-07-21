@@ -55,7 +55,7 @@ AEGIS-99 Research Consensus >=0.90?
 | **MiniMax M3** | Multimodal — image/video/audio APIs, texture, materials. **Native image+video input** (open-source M3) enables visual research: screenshots, UI workflows, reference images | Exa, Brave Search |
 | **GLM-5.2** | **Deep coding — Python/C++ patterns, library versions, PEP8 (lead)** | Context7, GitHub MCP |
 | GLM-5.1 | Deep coding — Python/C++ patterns (fallback) | Context7, GitHub MCP |
-| **Kimi K2.6** | Comprehensive — multi-step browse, web search, code interpreter | Tavily, Firecrawl |
+| **Kimi K2.7** | Comprehensive — multi-step browse, web search, code interpreter | Tavily, Firecrawl |
 | **DeepSeek V4-Pro** | Code patterns — GitHub repos, Stack Overflow, community fixes | GitHub MCP, Exa |
 
 ---

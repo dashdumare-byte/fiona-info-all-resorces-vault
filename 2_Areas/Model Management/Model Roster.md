@@ -34,7 +34,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | 3 | MiniMax M3 | `minimax/minimax-m3` | 256K | Multimodal + DCC |
 | 4 | **GLM-5.2** | `z-ai/glm-5.2` | **1.05M** | **Coding brain (lead)** |
 | 4b | GLM-5.1 | `z-ai/glm-5.1` | 192K | Coding brain (fallback) |
-| 5 | Kimi K2.6 | `moonshotai/kimi-k2.6` | 256K | Cleanup + edge cases |
+| 5 | Kimi K2.7 | `moonshotai/moonshotai/kimi-k2.7` | 256K | Cleanup + edge cases |
 | 6 | DeepSeek V4-Pro | `deepseek-v4-pro` | 1M | Raw code volume |
 | 7 | D-Wave Quantum | `d-wave-leap-api` | — | Strategy + optimize |
 | 8 | GPT-5.5 Pro | `openai/gpt-5.5-pro` | 1.05M | EXTREME fallback only |
@@ -51,7 +51,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | 3 | MiniMax M3 | `minimax/minimax-m3` | 256K | Multimodal |
 | 4 | **GLM-5.2** | `z-ai/glm-5.2` | **1.05M** | **Coding brain** |
 | 4b | GLM-5.1 | `z-ai/glm-5.1` | 192K | Coding brain (fallback) |
-| 5 | Kimi K2.6 | `moonshotai/kimi-k2.6` | 256K | Cleanup |
+| 5 | Kimi K2.7 | `moonshotai/moonshotai/kimi-k2.7` | 256K | Cleanup |
 | 6 | DeepSeek V4-Pro | `deepseek-v4-pro` | 1M | Raw generation |
 | 7 | D-Wave Quantum | `d-wave-leap-api` | — | Strategy |
 
@@ -119,7 +119,7 @@ ollama pull gemma4:26b
 ### Simple Tasks (<2s)
 | Model | String | Role |
 |-------|--------|------|
-| Kimi K2.6 | `moonshotai/kimi-k2.6` | Front-facing primary |
+| Kimi K2.7 | `moonshotai/moonshotai/kimi-k2.7` | Front-facing primary |
 | MiniMax M3 | NIM endpoint | Front-facing dual |
 
 ### Standard Tasks (<10s)
@@ -132,7 +132,7 @@ Same as Simple + AEGIS-99 mandatory >=0.85
 | HIGH | GLM-5.1 | `z-ai/glm-5.1` | Coding lead (fallback) |
 | HIGH | Qwen3.7-Max | `qwen3.7-max-preview` | Web/UI |
 | CRITICAL | Claude Opus 4.8 | `claude-opus-4-8` | Client-facing |
-| PARALLEL | Kimi K2.6 | `moonshotai/kimi-k2.6` | Long-context |
+| PARALLEL | Kimi K2.7 | `moonshotai/moonshotai/kimi-k2.7` | Long-context |
 | SPECIAL | Mistral-small | NIM endpoint | Logic/multimodal |
 | PARALLEL | MiMo-V2-Pro | `xiaomi/mimo-v2-pro` | Coding brain |
 
@@ -167,7 +167,7 @@ ALL 9 build models + all supervisors + quantum + overseers. AEGIS >=0.90.
 | Model/Source | Key Needed | Where |
 |-------------|------------|-------|
 | GPT-5.5 / GPT-5.5 Pro | OpenRouter API key | openrouter.ai |
-| Kimi K2.6 | OpenRouter or Moonshot API key | openrouter.ai / moonshot.cn |
+| Kimi K2.7 | OpenRouter or Moonshot API key | openrouter.ai / moonshot.cn |
 | DeepSeek V4-Pro | OpenRouter API key | openrouter.ai |
 | MiniMax M3 | OpenRouter API key OR self-hosted weights | openrouter.ai / local |
 | Claude Opus 4.8 | Vertex AI project ID | cloud.google.com |
@@ -184,7 +184,7 @@ ALL 9 build models + all supervisors + quantum + overseers. AEGIS >=0.90.
 
 1. **MiniMax M3 vs M2.5**: M3 = build + runtime critical. M2.5 = runtime front-facing NIM fallback.
 2. **Claude Opus 4.8 vs 4.6**: 4.8 = critical modules + supervisor. 4.6 = standard modules.
-3. **Kimi K2.6**: Build cleanup (Pass 5) + runtime simple/standard front-facing + long-context coding.
+3. **Kimi K2.7**: Build cleanup (Pass 5) + runtime simple/standard front-facing + long-context coding.
 4. **GLM-5.2 vs GLM-5.1 vs GLM-5 NIM**: GLM-5.2 = build + runtime coding lead (1.05M context). GLM-5.1 = coding fallback (192K). GLM-5 NIM = runtime NIM fallback only.
 5. **Quantum**: D-Wave = PRIMARY (annealing, optimization). Origin = SECONDARY (gate-model, backup).
 6. **Supervisors vs Overseers**: Supervisors (3) review code AFTER AEGIS-99. Overseers (2) monitor 24/7.

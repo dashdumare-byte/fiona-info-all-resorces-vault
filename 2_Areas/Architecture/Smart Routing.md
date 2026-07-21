@@ -68,7 +68,7 @@ Task Received
     v
 Analyze difficulty + scope
     |
-    +---> <2s, simple -----------> Kimi K2.6 + MiniMax M3 (no supervisors)
+    +---> <2s, simple -----------> Kimi K2.7 + MiniMax M3 (no supervisors)
     |
     +---> <10s, standard --------> 8-model pool + AEGIS-99 >=0.85
     |

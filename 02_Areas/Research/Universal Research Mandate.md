@@ -19,7 +19,7 @@ Module assigned -> ALL 8 models research independently (30-60min) -> ALL 8 cross
 | **GPT-5.5** | Adversarial |
 | **DeepSeek V4-Pro** | Code pattern depth |
 | **GLM-5.1** | Coding accuracy |
-| **Kimi K2.6** | Comprehensive scan |
+| **Kimi K2.7** | Comprehensive scan |
 | **Qwen3.7** | Web/UI |
 | **MiniMax M3** | Multimodal -- **Native image+video input** (open-source M3) enables visual research: screenshots, UI workflows, reference images |
 | **Claude Opus 4.6** | Architecture patterns |
@@ -32,7 +32,7 @@ Module assigned -> ALL 8 models research independently (30-60min) -> ALL 8 cross
 | GPT-5.5 | 25% |
 | DeepSeek V4-Pro | 20% |
 | GLM-5.1 | 15% |
-| Kimi K2.6 | 10% |
+| Kimi K2.7 | 10% |
 | Qwen3.7 | 3% |
 | MiniMax M3 | 1% |
 | Claude Opus 4.6 | 1% |

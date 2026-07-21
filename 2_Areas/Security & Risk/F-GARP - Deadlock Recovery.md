@@ -1,13 +1,13 @@
 ---
 tags: [security, risk-3, f-garp, deadlock, consensus, closed, layer-2]
 date-created: 2026-06-06
-source: FIONA_R3_R6_RIGOROUS_CROSS_ANALYSIS.md + 3-model research (Opus 4.7, Gemini 3.5, Kimi K2.6)
+source: FIONA_R3_R6_RIGOROUS_CROSS_ANALYSIS.md + 3-model research (Opus 4.7, Gemini 3.5, Kimi K2.7)
 ---
 
 # F-GARP: FIONA Graduated Autonomous Recovery Protocol
 
 > **Risk 3 CLOSED. Post-attempt-5 escalation path for AEGIS-99 council deadlock.**
-> Designed by cross-model research: Opus 4.7 + Gemini 3.5 + Kimi K2.6, synthesized here.
+> Designed by cross-model research: Opus 4.7 + Gemini 3.5 + Kimi K2.7, synthesized here.
 
 ---
 
@@ -130,4 +130,4 @@ Attempt 8+: Build PAUSE + architectural review
 
 ---
 
-*Risk 3 Status: CLOSED | Resolved: 2026-05-25 | Research: Opus 4.7 + Gemini 3.5 + Kimi K2.6*
+*Risk 3 Status: CLOSED | Resolved: 2026-05-25 | Research: Opus 4.7 + Gemini 3.5 + Kimi K2.7*

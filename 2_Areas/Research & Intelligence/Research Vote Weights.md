@@ -19,7 +19,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_ARCHITECTURE_v4.1.txt
 | **DeepSeek V4-Pro** | 20% | Code pattern research depth |
 | **GLM-5.2** | **15%** | **Coding accuracy, library versions (lead)** |
 | GLM-5.1 | 5% | Coding accuracy, library versions (fallback) |
-| **Kimi K2.6** | 10% | Comprehensive multi-step scan |
+| **Kimi K2.7** | 10% | Comprehensive multi-step scan |
 | **Qwen3.7** | 3% | Web/UI specifics |
 | **MiniMax M3** | 1% | Multimodal details |
 | **Claude Opus 4.6** | 1% | Architecture patterns |
@@ -39,7 +39,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_ARCHITECTURE_v4.1.txt
 | V4-Pro | Community fix #47 on GitHub for same bug | 20% | Solution path |
 | **GLM-5.2** | Python syntax confirmed, PEP8 compliant approach | **15%** | **Code quality (lead)** |
 | GLM-5.1 | Python syntax confirmed, PEP8 compliant approach | 5% | Code quality (fallback) |
-| Kimi K2.6 | Full bpy documentation context, version matrix | 10% | Documentation |
+| Kimi K2.7 | Full bpy documentation context, version matrix | 10% | Documentation |
 | Others | Minor details, edge cases | 5% | Supplementary |
 
 ### MASTER BRIEF = Blended output

@@ -69,7 +69,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 1
 | DeepSeek V4-Pro | 20% | Code pattern depth |
 | **GLM-5.2** | 15% | **Coding accuracy (lead)** |
 | GLM-5.1 | 5% | Coding accuracy (fallback) |
-| Kimi K2.6 | 10% | Comprehensive scan |
+| Kimi K2.7 | 10% | Comprehensive scan |
 | Qwen3.7 | 3% | Web/UI specifics |
 | MiniMax M3 | 1% | Multimodal |
 | Claude Opus 4.6 | 1% | Architecture |

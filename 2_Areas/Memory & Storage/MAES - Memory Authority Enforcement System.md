@@ -87,7 +87,7 @@ Without a memory authority hierarchy:
 | **Level 4: Nemotron** | AEGIS Architect Primary | AEGIS score finalization, architectural state |
 | **Level 3: Supervisors** | Claude Code, Codex, OpenCode | Module state transitions, review annotations |
 | **Level 2: Build Pool** | **GLM-5.2**, GLM-5.1, GPT-5.5, Opus 4.6 | Standard module writes, code generation output |
-| **Level 1: Research Pool** | Kimi K2.6, DeepSeek V4-Pro | Research briefs, preliminary findings |
+| **Level 1: Research Pool** | Kimi K2.7, DeepSeek V4-Pro | Research briefs, preliminary findings |
 | **Level 0: Overseers** | Pi, Goose | Log entries, health check data, error flags |
 
 ### Conflict Resolution
@@ -176,4 +176,4 @@ CREATE TABLE memory_writes (
 
 ---
 
-*Risk 6 Status: CLOSED | Resolved: 2026-05-25 | Research: Opus 4.7 + Gemini 3.5 + Kimi K2.6*
+*Risk 6 Status: CLOSED | Resolved: 2026-05-25 | Research: Opus 4.7 + Gemini 3.5 + Kimi K2.7*
