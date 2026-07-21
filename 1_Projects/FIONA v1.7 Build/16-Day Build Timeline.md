@@ -1,12 +1,12 @@
 ---
-tags: [build, timeline, 16-day, locked, project-active]
+tags: [build, timeline, 30-day, locked, project-active]
 date-created: 2026-06-06
 source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 ---
 
-# 16-Day Build Timeline
+# 30-Day Build Timeline
 
-> **Day-by-day execution plan. 69 modules. Lightning.ai. $15/day cap.**
+> **Day-by-day execution plan. 69 modules. Lightning.ai. $10/day cap.**
 
 ---
 
