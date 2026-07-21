@@ -67,4 +67,4 @@ AEGIS-99 scores all outputs. If FAIL -> activate F-GARP:
 
 ---
 
-*See also: [[16-Day Build Timeline]], [[Cursor Hard Gate]], [[F-GARP - Deadlock Recovery]]*
+*See also: [[30-Day Build Timeline]], [[Cursor Hard Gate]], [[F-GARP - Deadlock Recovery]]*

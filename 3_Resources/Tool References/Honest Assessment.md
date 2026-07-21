@@ -54,13 +54,13 @@ source: FIONA_v1.7_HONEST_ASSESSMENT(1).txt
 | Scenario | Probability | Outcome |
 |----------|-------------|---------|
 | Full 69-module build in 11 days | 15% | Unlikely |
-| Full 69-module build in 16 days | 65% | **Likely with current plan** |
+| Full 69-module build in 30 days | 65% | **Likely with current plan** |
 | Critical modules (1-40) in 11 days | 75% | Very likely |
-| Critical + DCC adapters in 16 days | 85% | Very likely |
+| Critical + DCC adapters in 30 days | 85% | Very likely |
 | Runtime production-grade | 90% | Likely IF build succeeds |
 | Full system production-grade | 75% | Likely with iteration |
 
-**Updated for 16-day timeline**: Significantly improved from original 11-day assessment.
+**Updated for 30-day timeline**: Significantly improved from original 11-day assessment.
 
 ---
 
@@ -115,14 +115,14 @@ source: FIONA_v1.7_HONEST_ASSESSMENT(1).txt
 | Can it work? | **Yes** |
 | Will it be easy? | **No** |
 | Is architecture sound? | **Yes, genuinely** |
-| Is execution risky? | **Medium — manageable with 16-day timeline** |
+| Is execution risky? | **Medium — manageable with 30-day timeline** |
 | Should you do it? | **Yes, with adjusted expectations** |
 
 **The architecture is more sophisticated than 95% of AI systems in production.**
 
 The risk is NOT in the design. The risk is execution:
 - Can you get all API keys working Day 0?
-- Can Lightning.ai handle 16 days continuous?
+- Can Lightning.ai handle 30 days continuous?
 - Can you debug integration issues fast enough?
 - Can you stay within budget?
 
@@ -132,4 +132,4 @@ That's worth building.
 
 ---
 
-*Assessment date: 2026-06-06 | 16-day timeline, $250-300 budget | All 15 risks closed*
+*Assessment date: 2026-06-06 | 30-day timeline, $250-300 budget | All 15 risks closed*

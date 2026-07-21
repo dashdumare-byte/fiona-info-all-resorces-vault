@@ -6,7 +6,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_COMPLETE_LOCKIN_V3.md
 
 # Merge Build Plan
 
-> **Pre-merge (you) -> Merge session (4-8hrs) -> Post-merge pre-build (you) -> 16-day build (system).**
+> **Pre-merge (you) -> Merge session (4-8hrs) -> Post-merge pre-build (you) -> 30-day build (system).**
 
 ---
 
@@ -197,4 +197,4 @@ All models via API — see [[Model Roster]] for full list.
 
 ---
 
-*See also: [[16-Day Build Timeline]], [[Critical Modules]], [[Model Roster]]*
+*See also: [[30-Day Build Timeline]], [[Critical Modules]], [[Model Roster]]*

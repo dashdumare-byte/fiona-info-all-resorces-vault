@@ -7,7 +7,7 @@ last-modified: 2026-06-06
 # FIONA v1.7 — Command Center
 
 > **Autonomous AI Creative Director for Pure Magic**
-> 69 modules | 16-day build | $250-300 budget | 9-model parallel generation
+> 69 modules | 30-day build | $250-300 budget | 9-model parallel generation
 > Architecture: v4.1 | AEGIS-99: v4.1 | Memory: MAES v1.0
 
 ---
@@ -17,8 +17,8 @@ last-modified: 2026-06-06
 | Component | Status | Details |
 |-----------|--------|---------|
 | Architecture | LOCKED | v4.1 confirmed May 3 |
-| Budget | LOCKED | $250-300, $15/day cap |
-| Timeline | LOCKED | 16 days on Lightning.ai |
+| Budget | LOCKED | $250-300, $10/day cap |
+| Timeline | LOCKED | 30 days on Lightning.ai |
 | Model Pool | LOCKED | 9 critical / 8 standard |
 | DCC Gates | LOCKED | 7 tools, specific versions |
 | AEGIS-99 | LOCKED | Weights + thresholds v4.1 |
@@ -46,7 +46,7 @@ last-modified: 2026-06-06
 - [[Quantum Layer]] — D-Wave Leap + Origin Pilot
 
 ### Build
-- [[16-Day Build Timeline]] — Hour-by-hour execution plan
+- [[30-Day Build Timeline]] — Hour-by-hour execution plan
 - [[Critical Modules]] — 8 slots + Module 69 (Web App)
 - [[DCC Adapter Ecosystem]] — 7 tools, version gates, headless config
 - [[Merge Build Plan]] — Pre-merge → Merge → Post-merge → Build
@@ -83,7 +83,7 @@ last-modified: 2026-06-06
 
 ---
 
-## 16-Day Build Timeline At-a-Glance
+## 30-Day Build Timeline At-a-Glance
 
 | Days | Phase | Modules | Pool | Key Checkpoint |
 |------|-------|---------|------|----------------|
@@ -187,7 +187,7 @@ FionaVault/
 | Council deadlock (AEGIS stuck) | Activate [[F-GARP - Deadlock Recovery]] Step 1-7 |
 | Memory authority conflict | Follow [[MAES - Memory Authority Enforcement System]] escalation |
 | Security incident | Run Inner Virus Framework classification, isolate, escalate |
-| Budget exceeded ($15/day) | Pause non-critical, notify Ashandy, switch to free tiers |
+| Budget exceeded ($10/day) | Pause non-critical, notify Ashandy, switch to free tiers |
 | API key failure | Switch to fallback string, check NIM free alternatives |
 | DCC adapter fail | Kimi Agent research retry, E2B sandbox test, Context7 validation |
 | Build stuck >2hrs | Pi + Goose active diagnose, escalate to Ashandy |

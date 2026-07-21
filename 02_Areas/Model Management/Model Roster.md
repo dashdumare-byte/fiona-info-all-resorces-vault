@@ -31,7 +31,7 @@ ollama pull hf.co/Abiray/harrier-oss-v1-27b-GGUF:Q4_K_M
 - **Code pattern reuse**: Semantic search across previous modules. 20-40% faster coding.
 - **AEGIS outlier detection**: Cluster analysis catches model drift before consensus.
 - **Lint fix library**: Semantic search for similar fixes. 10 min/module saved.
-- **Total**: 2-3 days saved on 16-day build.
+- **Total**: 2-3 days saved on 30-day build.
 
 ### Runtime Value
 - **Creative taste**: +40% accuracy (5,376 dims vs 384). Distinguishes 'neon pink' from 'neon orange'.

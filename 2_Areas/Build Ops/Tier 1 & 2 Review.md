@@ -68,7 +68,7 @@ Every 20 hours via OpenClaw cron.
 
 ### Cost
 - ~$3-8 per cycle
-- ~$10-15 total across 16-day build
+- ~$10-15 total across 30-day build
 
 ### Scope
 - ALL code from the past 20 hours

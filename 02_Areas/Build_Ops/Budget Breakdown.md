@@ -5,7 +5,7 @@ date-created: 2026-06-08
 
 # Budget Breakdown
 
-> **Build: $300-350 (16 days). Runtime: $200-250/month. Daily cap: $20.**
+> **Build: $300-350 (30 days). Runtime: $200-250/month. Daily cap: $20.**
 
 ## Build Budget (16 Days)
 
@@ -19,7 +19,7 @@ date-created: 2026-06-08
 | Claude Fable 5 reserve | - | 3-5 calls | $50-100 |
 | **TOTAL BUILD** | | | **~$300-350** |
 
-### Daily Cap: $20/day
+### Daily Cap: $10/day
 
 ## Runtime Budget (Monthly)
 
@@ -33,7 +33,7 @@ date-created: 2026-06-08
 ## Claude Fable 5 Budget (June 9, 2026)
 - **Status**: EXTREME fallback only, Ashandy approval required
 - **Buffer**: $50-100 (part of $300-350 total budget)
-- **Expected calls**: 3-5 across 16-day build
+- **Expected calls**: 3-5 across 30-day build
 - **Cost per call**: $2.50-$50 depending on task length
 - **ROI**: One deadlocked module prevented = $20 Fable call saves 4-8 hours
-- **Daily cap**: $20/day regular + Fable 5 on approval only
+- **Daily cap**: $10/day regular + Fable 5 on approval only

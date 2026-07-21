@@ -198,7 +198,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_CRITICAL_MODULES_LOCKED(
 | Integration+Deploy | 2 | $8-10 | $16-20 |
 | **TOTAL** | **16** | | **$153-163** |
 
-**Within $250-300 budget. $15/day cap enforced.**
+**Within $250-300 budget. $10/day cap enforced.**
 
 ---
 

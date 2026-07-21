@@ -15,7 +15,7 @@ source: FIONA_v1.7_LOCKED_SUMMARY(1).txt + Layer 2 updates
 
 Autonomous AI Creative Director for Pure Magic. Orchestrates 7 DCC tools for end-to-end creative production.
 
-**Scope**: 69 modules | **Timeline**: 16 days | **Budget**: $250-300 | **Platform**: Lightning.ai
+**Scope**: 69 modules | **Timeline**: 30 days | **Budget**: $250-300 | **Platform**: Lightning.ai
 
 ---
 
@@ -67,7 +67,7 @@ M1 UTM | M11 Orchestrator | AEGIS-99 Engine | Security | Memory Manager | DCC Ba
 + M69 Web App (also critical, Day 10)
 
 ### Budget
-Build: $250-300 (16 days, $15/day cap) | Runtime: $200-250/month
+Build: $250-300 (30 days, $10/day cap) | Runtime: $200-250/month
 
 ### Timeline
 Days 1-3: Infrastructure | Days 4-7: DCC adapters | Day 8: Integration | Day 9: B4D Grillz | Day 10: Web App | Days 11-14: Standard modules | Days 15-16: Integration + deploy

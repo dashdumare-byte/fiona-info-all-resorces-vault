@@ -93,4 +93,4 @@ Quantum provides targeted guidance:
 
 ---
 
-*See also: [[AEGIS-99 Consensus Engine]], [[Model Roster]], [[16-Day Build Timeline]]*
+*See also: [[AEGIS-99 Consensus Engine]], [[Model Roster]], [[30-Day Build Timeline]]*

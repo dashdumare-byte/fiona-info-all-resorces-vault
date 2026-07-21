@@ -167,4 +167,4 @@ See [[Cursor Hard Gate]] for all 12 checks.
 
 ---
 
-*See also: [[16-Day Build Timeline]], [[Cursor Hard Gate]], [[Universal Research Mandate]]*
+*See also: [[30-Day Build Timeline]], [[Cursor Hard Gate]], [[Universal Research Mandate]]*

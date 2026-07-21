@@ -6,7 +6,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 14
 
 # Budget Breakdown
 
-> **Build: $250-300 (16 days). Runtime: $200-250/month. Daily cap: $15.**
+> **Build: $250-300 (30 days). Runtime: $200-250/month. Daily cap: $15.**
 
 ---
 
@@ -23,7 +23,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 14
 | **TOTAL BUILD** | | | **~$150-250** |
 
 ### Daily Cap Enforcement
-- Hard limit: $15/day
+- Hard limit: $10/day
 - If approaching cap: switch to free tiers (NIM, Gemma 4 via Ollama)
 - If cap exceeded: PAUSE, notify Ashandy, optimize before resume
 
@@ -77,4 +77,4 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 14
 
 ---
 
-*See also: [[16-Day Build Timeline]], [[Honest Assessment]]*
+*See also: [[30-Day Build Timeline]], [[Honest Assessment]]*

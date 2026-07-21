@@ -6,7 +6,7 @@ date-created: 2026-06-08
 # Locked Summary -- One Page
 
 ## What FIONA Is
-Autonomous AI Creative Director for Pure Magic. 69 modules | 16 days | $300-350 | Lightning.ai
+Autonomous AI Creative Director for Pure Magic. 69 modules | 30 days | $300-350 | Lightning.ai
 
 ## AEGIS-99
 Nemotron 3 Ultra 550B 20% (NEW -- 300 t/s, open weights, #1 US) | GPT-5.5 15% | V4-Pro 15% | D-Wave 15% | MiniMax M3 (open, image+video) 15% | Qwen3.7 10% | Safety 10%
@@ -28,7 +28,7 @@ Pi Agent (terminal) | Goose (desktop + terminal)
 UE 5.7 | Blender 5.1.1 | DaVinci 21.0 | Nuke 17.0 | C4D 2026.2 | Houdini 21.0 | ComfyUI latest SHA
 
 ## Budget
-Build: $300-350 (16 days, $20/day cap) | Runtime: $200-250/month | Fable 5 reserve: $50-100
+Build: $300-350 (30 days, $10/day cap) | Runtime: $200-250/month | Fable 5 reserve: $50-100
 
 ## GBrain (NEW -- Pre-build task #36)
 Overnight memory optimization: dedup, citation fix, contradiction detection. Install during merge session. FREE.
