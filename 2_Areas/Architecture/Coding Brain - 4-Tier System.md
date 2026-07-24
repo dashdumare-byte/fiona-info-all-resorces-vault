@@ -33,7 +33,7 @@ date-created: 2026-07-22
 | 1 | **Ornith-35B MoE** | Primary L1 coder | 75.6% SWE-Bench Verified at $0. 25GB VRAM. Handles 80% of simple module scaffolding. |
 | 2 | **Tencent Hy3** | Logic + reasoning | ~74% SWE-Bench Verified. FREE on OpenRouter. Architectural decisions, code review. |
 | 3 | **Poolside Laguna XS 2.1** | Fast iteration + testing | 70.9% SWE-Bench Verified. FREE on OpenRouter. Tests, validation. |
-| 4 | **Gemma 4 26B** | Syntax/lint/basic fixes | 77.1% LiveCodeBench. Local via Ollama. Formatting, PEP8, simple functions. |
+| 4 | **Qwen3.5-9B (L1 coding lead) | 82.5% MMLU-Pro, 76% HumanEval, Apache 2.0, ~6GB VRAM | 77.1% LiveCodeBench. Local via Ollama. Formatting, PEP8, simple functions. |
 | 5 | **MiniMax M3** (NIM) | Multimodal coding | FREE via NIM. Code involving image/video processing. |
 
 ### Runtime Team
@@ -43,13 +43,13 @@ date-created: 2026-07-22
 | 1 | **Ornith-35B MoE** | Client project scaffolding | $0, fast. Simple client landing pages, basic scripts. |
 | 2 | **Tencent Hy3** | Quick logic fixes | FREE. Hotfixes, small feature additions. |
 | 3 | **Poolside Laguna XS 2.1** | Test writing | FREE. Write tests for client code. |
-| 4 | **Gemma 4 26B** | Code review assistant | $0 local. Review client code before human review. |
+| 4 | **Qwen3.5-9B (L1 coding) | Code review, basic fixes | $0 local. Review client code before human review. |
 | 5 | **MiniMax M3** (NIM) | Multimodal creative coding | FREE. Code for image/video generation in campaigns. |
 
 ### L1 Use Cases (Both Build + Runtime)
 - Single file, <100 lines
 - Lint, format, simple functions
-- Basic scaffolding, boilerplate
+- Qwen3.5-9B: Basic scaffolding, boilerplate
 - Test generation
 - Syntax fixes, PEP8
 - Simple API endpoints
