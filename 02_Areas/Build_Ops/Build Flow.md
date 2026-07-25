@@ -33,7 +33,7 @@ Step 5: FORMAL VERIFICATION (Leanstral -- if math)
 Step 6: [RESERVED -- Tier 1 Review triggers here]
     |
     v
-Step 7: 3-SUPERVISOR REVIEW (Claude -> Fable 5 for extreme)
+Step 7: 3-SUPERVISOR REVIEW (Claude -> Opus 5 (Fable 5 fallback) for extreme)
     |
     v
 Step 8: CURSOR HARD GATE (12 checks)
@@ -52,16 +52,16 @@ AEGIS-99 scores all outputs. If FAIL -> activate F-GARP:
 2. Evidence re-weighting
 3. Factual verification (FacTool)
 4. Sub-council arbitration
-4b. **Fable 5 arbitration (NEW)**
+4b. **Opus 5 arbitration (Fable 5 fallback) (NEW)**
 5. Quantum-assisted (D-Wave)
 6. Executive override (Ashandy)
 7. Build pause
 
 ---
 
-## Step 7: 3-Supervisor Review (Updated with Fable 5)
+## Step 7: 3-Supervisor Review (Updated with Opus 5 (Fable 5 fallback))
 
-1. **Claude Code review**: Sonnet -> Opus 4.6 -> Opus 4.8 -> **Fable 5** (>10 files)
+1. **Claude Code review**: Sonnet -> Opus 4.6 -> Opus 4.8 -> **Opus 5** (Fable 5 fallback) (>10 files)
 2. **Codex review**: GPT-5.5 adversarial
 3. **OpenCode review**: Qwen3.7 + Nemotron Ultra independent
 

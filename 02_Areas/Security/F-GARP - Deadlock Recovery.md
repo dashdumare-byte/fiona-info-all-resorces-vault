@@ -7,7 +7,7 @@ source: FIONA_R3_R6_RIGOROUS_CROSS_ANALYSIS.md + 3-model research (Opus 4.7, Gem
 # F-GARP: FIONA Graduated Autonomous Recovery Protocol
 
 > **Risk 3 CLOSED. Post-attempt-5 escalation path for AEGIS-99 council deadlock.**
-> Updated: 2026-06-09 with Fable 5 Step 4b
+> Updated: 2026-06-09 with Opus 5 Step 4b (Fable 5 fallback)
 
 ---
 
@@ -25,8 +25,8 @@ Inject FacTool + DeepResearcher. Cost: $0.20-0.50.
 ### Step 4: Sub-Council Arbitration (Attempt 5)
 Non-deadlocked models form panel; Nemotron tie-breaker.
 
-### Step 4b: Fable 5 Arbitration (NEW -- June 9, 2026)
-Feed all arguments to Claude Fable 5 for first-principles resolution.
+### Step 4b: Opus 5 Arbitration (Fable 5 fallback) (NEW -- June 9, 2026)
+Feed all arguments to Claude Opus 5 for first-principles resolution.
 Cost: $5-10. Prevents escalation to quantum/Ashandy.
 
 ### Step 5: Quantum-Assisted (Attempt 6)
@@ -40,4 +40,4 @@ Full pause. Architectural review required.
 
 ---
 
-*Risk 3 Status: CLOSED | Updated: 2026-06-09 (Fable 5 Step 4b)*
+*Risk 3 Status: CLOSED | Updated: 2026-06-09 (Opus 5 Step 4b (Fable 5 fallback))*

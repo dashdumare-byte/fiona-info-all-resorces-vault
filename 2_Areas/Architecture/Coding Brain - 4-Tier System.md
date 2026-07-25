@@ -95,7 +95,7 @@ date-created: 2026-07-22
 
 | # | Model | Role | Why |
 |---|-------|------|-----|
-| 11 | **Claude Fable 5** | Complex refactors | 80% SWE-Bench Pro — best repo-level coding. Multi-file architectural changes. |
+| 11 | **Claude Opus 5** | Complex refactors | 80% SWE-Bench Pro — best repo-level coding. Multi-file architectural changes. |
 | 12 | **Claude Opus 4.8** | Architecture + DCC adapters | 69.2% SWE-Bench Pro. Best for complex DCC logic (UE, Houdini, Nuke). |
 | 13 | **GPT-5.6 Sol** | Agentic build tasks | 88.8% Terminal-Bench, 80 Coding Agent Index. Autonomous multi-step build workflows. |
 | 14 | **DeepSeek V4-Pro** | Algorithmic modules | 93.5% LiveCodeBench — best algorithms. Module 64, optimization code. |
@@ -105,7 +105,7 @@ date-created: 2026-07-22
 
 | # | Model | Role | Why |
 |---|-------|------|-----|
-| 11 | **Claude Fable 5** | Complex client architecture | 80% SWE-Bench Pro. Large client projects, e-commerce, custom platforms. |
+| 11 | **Claude Opus 5** | Complex client architecture | 80% SWE-Bench Pro. Large client projects, e-commerce, custom platforms. |
 | 12 | **Claude Opus 4.8** | DCC runtime integration | Best for UE blueprints, Houdini VEX, Nuke Python at runtime. |
 | 13 | **Kimi K3** | Creative frontend + vision | Frontend Code Arena #1. Creative campaign websites, interactive experiences. |
 | 14 | **DeepSeek V4-Pro** | Algorithmic creative tools | 93.5% LiveCodeBench. Custom algorithms for generative art, data viz. |
@@ -190,7 +190,7 @@ All L1 + L2 + L3 models run in parallel. AEGIS-99 >=0.95 consensus. GPT-5.6 Sol 
 
 ## Key Distinctions
 
-1. **Opus 4.8 vs Fable 5 vs Sol**: Opus 4.8 = pure coding reliability (69.2% SWE-Bench). Fable 5 = repo-level refactoring (80% SWE-Bench). Sol = agentic workflows (80 Coding Agent Index). All three L3, different roles.
+1. **Opus 4.8 vs Fable 5 vs Sol**: Opus 4.8 = pure coding reliability (69.2% SWE-Bench). Opus 5 = repo-level (Fable 5 fallback) refactoring (80% SWE-Bench). Sol = agentic workflows (80 Coding Agent Index). All three L3, different roles.
 2. **Kimi K2.7 vs K3**: K2.7 = L2, high-speed, cheap ($4). K3 = L3, large-context, expensive ($15). NOT the same model.
 3. **GLM 5.2**: L2 lead for standard coding. Escalates to L3 only for architecture decisions.
 4. **Adapters + Webapp**: L3 MINIMUM. Never L1/L2. Hard rule.

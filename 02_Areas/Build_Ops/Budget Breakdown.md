@@ -16,7 +16,7 @@ date-created: 2026-06-08
 | MiniMax M3 (OpenRouter or self-host) | $0-3 | 16 | $0-50 |
 | D-Wave Leap | $0 | 16 | FREE (LaunchPad 3-month free) |
 | Research tools | $1.25 | 16 | ~$20 |
-| Claude Fable 5 reserve | - | 3-5 calls | $50-100 |
+| Claude Opus 5 reserve | - | 3-5 calls | $50-100 |
 | **TOTAL BUILD** | | | **~$300-350** |
 
 ### Daily Cap: $10/day
@@ -30,10 +30,10 @@ date-created: 2026-06-08
 | Supabase | $25 |
 | **TOTAL RUNTIME** | **~$200-250/month** |
 
-## Claude Fable 5 Budget (June 9, 2026)
+## Claude Opus 5 Budget (June 9, 2026)
 - **Status**: EXTREME fallback only, Ashandy approval required
 - **Buffer**: $50-100 (part of $300-350 total budget)
 - **Expected calls**: 3-5 across 30-day build
 - **Cost per call**: $2.50-$50 depending on task length
 - **ROI**: One deadlocked module prevented = $20 Fable call saves 4-8 hours
-- **Daily cap**: $10/day regular + Fable 5 on approval only
+- **Daily cap**: $10/day regular + Opus 5 on approval (Fable 5 fallback) only

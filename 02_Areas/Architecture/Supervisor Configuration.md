@@ -14,9 +14,9 @@ date-created: 2026-06-08
 | **Primary** | Opus 4.8 |
 | **Secondary** | Opus 4.6 |
 | **Tertiary** | Sonnet 4.6 |
-| **EXTREME** | **Fable 5** (NEW -- Ashandy approval only) |
+| **EXTREME** | **Opus 5** (NEW -- Ashandy approval only) |
 
-**Fable 5 activates when:**
+**Opus 5 activates when:**
 - Task involves >10 files
 - Architectural decisions with no obvious answer
 - Module 68 (B4D Grillz) precision verification

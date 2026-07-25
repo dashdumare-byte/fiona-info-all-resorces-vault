@@ -15,7 +15,7 @@ date-created: 2026-07-22
 
 ### 1. LLMs (Dense Architectures)
 **What:** Predict next word using fully activated neural networks. General knowledge, reasoning, text generation.
-**In FIONA:** GPT-5.6 Sol/Terra, Claude Opus 4.8/Fable 5, GLM 5.2, Kimi K2.7/K3
+**In FIONA:** GPT-5.6 Sol/Terra, Claude Opus 4.8/Opus 5 (Fable 5 fallback), GLM 5.2, Kimi K2.7/K3
 **Tier:** L1-L3 AEGIS-99 + Coding Brain
 **Action:** Already integrated. No changes.
 
@@ -183,7 +183,7 @@ date-created: 2026-07-22
 ### 19. Hierarchical Reasoning (ToT/MCTS)
 **What:** Tree-of-Thoughts / Monte Carlo Tree Search for multi-level planning.
 **FIONA Use:** Module 64 (Self-Diagnostics), F-GARP deadlock recovery
-**Status:** Reference. Technique, not a model. Partially covered by Sol/Fable 5 CoT.
+**Status:** Reference. Technique, not a model. Partially covered by Sol/Opus 5 CoT.
 
 ---
 

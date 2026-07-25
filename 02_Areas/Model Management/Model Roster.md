@@ -45,7 +45,7 @@ ollama pull hf.co/Abiray/harrier-oss-v1-27b-GGUF:Q4_K_M
 |------|-------|------|------|
 | 1 | 270M | Always | Client chat, simple search, real-time taste |
 | 2 | 0.6B | GBrain sync | Research embedding, code pattern matching, dedup |
-| 3 | 27B Q4 | Sunday 3 AM | Full vault re-embedding, Fable 5 deep analysis |
+| 3 | 27B Q4 | Sunday 3 AM | Full vault re-embedding, Opus 5 deep analysis (Fable 5 fallback) |
 
 ### Total VRAM
 - Normal: 1GB (270M only)

@@ -9,7 +9,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 
 > **Complete reference for all 20+ models in the FIONA ecosystem.**
 > **Architecture: 3-Tier AEGIS-99 (L1 Free → L2 Standard → L3 Premium → Nuclear)**
-> Last updated: 2026-07-22 (GPT-5.6, Fable 5, Kimi K3, Ornith, Tencent Hy3, Laguna XS 2.1, Gemma 4 added)
+> Last updated: 2026-07-22 (GPT-5.6, Opus 5, Kimi K3, Ornith, Tencent Hy3, Laguna XS 2.1, Gemma 4 added)
 
 ---
 
@@ -85,7 +85,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 |---|-------|--------|---------|------|-------------------|
 | 12 | **GPT-5.6 Sol** | `openai/gpt-5.6-sol` | 1.05M | Deep analysis, agentic tasks | $30 |
 | 12u | GPT-5.6 Sol Ultra | `openai/gpt-5.6-sol` (ultra mode) | 1.05M | 4 parallel agents, nuclear tasks | $90 (3x) |
-| 13 | **Fable 5** | `anthropic/fable-5` (Anthropic API) | 1M | **Deep creative analysis, reasoning SOTA** | $25 |
+| 13 | **Opus 5** | `anthropic/opus-5` (Anthropic API) | 1M | **Deep creative analysis, reasoning SOTA** | $25 |
 | 14 | **Opus 4.8** | `anthropic/claude-opus-4.8` | 1M | Visual architecture, critical coding, Fable 5 Lite backup | $25 |
 | 15 | **DeepSeek V4-Pro** | `deepseek/deepseek-v4-pro` | 1.05M | Raw code volume, long-horizon | $8 |
 | 16 | **Kimi K3** | `moonshotai/kimi-k3` | 1.05M | Large-context coding, frontend/design, multimodal | $15 |
@@ -95,7 +95,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | Model | SWE-Bench Pro | Terminal-Bench | Agents' Last Exam | Key Feature |
 |-------|---------------|----------------|-------------------|-------------|
 | GPT-5.6 Sol | 64.6% | 88.8% | 53.6% | Agentic SOTA, 4-agent ultra mode |
-| Fable 5 | 72.0% | 91.0% | 58.0% | Reasoning SOTA, deep creative analysis |
+| Opus 5 | 72.0% | 91.0% | 58.0% | Reasoning SOTA, deep creative analysis |
 | Opus 4.8 | 69.2% | 78.9% | 45.2% | Visual + coding, most proven |
 | DeepSeek V4-Pro | 64.3% | 83.4% | 46.9% | 1.05M context, hybrid attention |
 | Kimi K3 | ~62% (est) | 85.0% (est) | ~50% (est) | 1M context, frontend #1, vision-in-loop |
@@ -116,7 +116,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 
 ---
 
-## Fable 5 API Setup
+## Opus 5 API Setup
 
 **Status:** Available via Anthropic API key (API access restored July 2026)
 
@@ -131,7 +131,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | Backup | Opus 4.8 + Fable behavioral prompt (Fable 5 Lite) |
 
 ```bash
-# Test Fable 5 API
+# Test Opus 5 API
 curl https://api.anthropic.com/v1/messages \
   -H "x-api-key: $ANTHROPIC_API_KEY" \
   -H "anthropic-version: 2023-06-01" \
@@ -148,7 +148,7 @@ curl https://api.anthropic.com/v1/messages \
 
 | # | Tool | Models | Config | Role |
 |---|------|--------|--------|------|
-| 1 | Claude Code | Opus 4.8 / Fable 5 + Sonnet | CLAUDE.md | Production code, bugs, refactor, memory, security, DCC gate |
+| 1 | Claude Code | Opus 4.8 / Opus 5 (Fable 5 fallback) + Sonnet | CLAUDE.md | Production code, bugs, refactor, memory, security, DCC gate |
 | 2 | Codex | GPT-5.6 Sol/Terra + plugin | AGENTS.md | Validate AEGIS-99, code quality, cross-check, flag deadlock |
 | 3 | OpenCode | Qwen3.7 + Nemotron | opencode.json | Independent review, alternative impl, edge cases |
 
@@ -194,7 +194,7 @@ Shared: 8 objectives, log to shared JSONL, escalate on 5th failure, report every
 | DeepSeek V4-Pro | OpenRouter API key | openrouter.ai | L2/L3 |
 | MiniMax M3 | OpenRouter API key OR self-hosted weights | openrouter.ai / local | L1 |
 | Claude Opus 4.8 | Vertex AI project ID | cloud.google.com | L3 |
-| **Fable 5** | **Anthropic API key** | **anthropic.com** | **L3** |
+| **Opus 5** | **Anthropic API key** | **anthropic.com** | **L3** |
 | **GLM-5.2** (GLM-5.1 fallback) | Z.ai API key | z.ai | L2 |
 | Qwen3.7-Max-Preview | Alibaba Cloud Model Studio | alibabacloud.com | L2 |
 | Nemotron 3 Ultra 550B | NVIDIA NIM free dev key | build.nvidia.com | L1 |
@@ -209,7 +209,7 @@ Shared: 8 objectives, log to shared JSONL, escalate on 5th failure, report every
 ## Key Distinctions (Prevent Mix-Ups)
 
 1. **MiniMax M3 vs M2.5**: M3 = L1 free multimodal. M2.5 = deprecated, do not use.
-2. **Claude Opus 4.8 vs Fable 5**: Opus 4.8 = visual + coding. Fable 5 = deep creative analysis + reasoning. Both L3.
+2. **Claude Opus 4.8 vs Opus 5 (Fable 5 fallback)**: Opus 4.8 = visual + coding. Fable 5 = deep creative analysis + reasoning. Both L3.
 3. **Kimi K2.7 vs K3**: K2.7 = L2 standard, high-speed ($4), 256K context. K3 = L3 premium, large-context ($15), 1M context. NOT the same model.
 4. **GLM-5.2 vs GLM-5.1 vs GLM-5 NIM**: GLM-5.2 = L2 coding lead (1.05M). GLM-5.1 = L2 coding fallback (192K). GLM-5 NIM = L1 runtime fallback only.
 5. **GPT-5.6 Terra vs Sol**: Terra = L2 standard ($15), half cost of GPT-5.5. Sol = L3 premium ($30), agentic SOTA. Both replace GPT-5.5.
@@ -250,7 +250,7 @@ Shared: 8 objectives, log to shared JSONL, escalate on 5th failure, report every
 | Model | Weight | Specialty |
 |-------|--------|-----------|
 | GPT-5.6 Sol | 15% | Agentic tasks |
-| Fable 5 | 15% | Deep creative analysis |
+| Opus 5 | 15% | Deep creative analysis (Fable 5 fallback) |
 | Opus 4.8 | 15% | Visual + critical coding |
 | DeepSeek V4-Pro | 15% | Raw code volume |
 | Kimi K3 | 10% | Large-context coding |
@@ -286,7 +286,7 @@ All 20+ models vote. AEGIS-99 >=0.95 required. GPT-5.6 Sol Ultra coordinates 4 p
 | 2026-07-14 | 16-day → 30-day build timeline |
 | 2026-07-22 | **3-Tier AEGIS-99 system implemented** |
 | 2026-07-22 | GPT-5.6 Sol/Terra/Luna added |
-| 2026-07-22 | Fable 5 restored to L3 Premium |
+| 2026-07-22 | Opus 5 added (Fable 5 fallback) to L3 Premium |
 | 2026-07-22 | Kimi K3 added to L3 Premium |
 | 2026-07-22 | Ornith-35B, Tencent Hy3, Poolside Laguna XS 2.1, Gemma 4 added to L1 |
 | 2026-07-22 | Grok 4.5 added to L2 Standard |

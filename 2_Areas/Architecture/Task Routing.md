@@ -14,7 +14,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 8
 
 | Attribute | Value |
 |-----------|-------|
-| **Models** | L1: MiniMax M3 + Gemma 4 + Ornith-35B | L2: + Kimi K2.7 + GPT-5.6 Terra + GLM-5.2 | L3: + Fable 5 + Kimi K3 |
+| **Models** | L1: MiniMax M3 + Gemma 4 + Ornith-35B | L2: + Kimi K2.7 + GPT-5.6 Terra + GLM-5.2 | L3: + Opus 5 + Kimi K3 (Fable 5 fallback) |
 | **AEGIS-99** | Optional |
 | **Research** | Minimal (Kimi fast scan) |
 | **Supervisors** | None |
