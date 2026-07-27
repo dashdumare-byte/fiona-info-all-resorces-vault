@@ -1,13 +1,13 @@
 ---
 tags: [dashboard, fiona, MOC]
 date-created: 2026-06-06
-last-modified: 2026-06-06
+last-modified: 2026-07-28
 ---
 
 # FIONA v1.7 — Command Center
 
 > **Autonomous AI Creative Director for Pure Magic**
-> 69 modules | 30-day build | $250-300 budget | 9-model parallel generation
+> 69 modules | 30-day build | $250-300 budget | 19-model L3 Premium parallel generation
 > Architecture: v4.1 | AEGIS-99: v4.1 | Memory: MAES v1.0
 
 ---
@@ -23,7 +23,7 @@ last-modified: 2026-06-06
 | DCC Gates | LOCKED | 7 tools, specific versions |
 | AEGIS-99 | LOCKED | Weights + thresholds v4.1 |
 | Memory System | LOCKED | Supabase + Chroma + Obsidian + ASI-Evolve |
-| Quantum Layer | LOCKED | D-Wave primary, Origin secondary |
+| Quantum Layer | LOCKED | ORION Hybrid Classical-Quantum (Braket production) |
 | Supervisors | LOCKED | Claude Code + Codex + OpenCode |
 | Overseers | LOCKED | Pi Agent + Goose dual |
 | Risk 3 (Deadlock) | CLOSED | F-GARP protocol active |
@@ -43,7 +43,7 @@ last-modified: 2026-06-06
 - [[Supervisor Configuration]] — 3 supervisors with smart routing
 - [[Overseer Configuration]] — Pi + Goose dual system
 - [[Task Routing]] — Simple → Standard → Coding → Critical
-- [[Quantum Layer]] — D-Wave Leap + Origin Pilot
+- [[Quantum Layer]] — ORION: Classical + Braket quantum turbo-boost
 
 ### Build
 - [[30-Day Build Timeline]] — Hour-by-hour execution plan
@@ -87,13 +87,13 @@ last-modified: 2026-06-06
 
 | Days | Phase | Modules | Pool | Key Checkpoint |
 |------|-------|---------|------|----------------|
-| 1-3 | Infrastructure | UTM, Orchestrator, AEGIS-99, Security, Memory | 9-model critical | All infra passes AEGIS >=0.90 |
-| 4-5 | DCC Batch A | ComfyUI, Blender, DaVinci, Nuke | 9-model critical | All 4 adapters launch headless |
-| 6-7 | DCC Batch B | C4D, Houdini, UE5 | 9-model critical | All 3 adapters launch headless |
+| 1-3 | Infrastructure | UTM, Orchestrator, AEGIS-99, Security, Memory | L3 Premium | All infra passes AEGIS >=0.90 |
+| 4-5 | DCC Batch A | ComfyUI, Blender, DaVinci, Nuke | L3 Premium | All 4 adapters launch headless |
+| 6-7 | DCC Batch B | C4D, Houdini, UE5 | L3 Premium | All 3 adapters launch headless |
 | 8 | Integration | Cross-adapter pipeline | Full pool | Intake -> process -> output |
-| 9 | B4D Grillz | Module 68 (dedicated day) | 9-model + Axplorer + Leanstral | STL +-0.05mm verified |
-| 10 | Web App | Module 69 (dedicated day) | 9-model, Qwen3.6 leads frontend | Deploys, real-time sync works |
-| 11-14 | Standard Modules | 50 modules, ~4/day | 8-model standard | All pass AEGIS >=0.85 |
+| 9 | B4D Grillz | Module 68 (dedicated day) | L3 Premium + Axplorer + Leanstral | STL +-0.05mm verified |
+| 10 | Web App | Module 69 (dedicated day) | L3 Premium, Qwen3.7 leads frontend | Deploys, real-time sync works |
+| 11-14 | Standard Modules | 50 modules, ~4/day | L2 Standard | All pass AEGIS >=0.85 |
 | 15-16 | Integration | End-to-end + deployment | Full everything | Fiona responds to all task levels |
 
 ---
@@ -113,7 +113,7 @@ last-modified: 2026-06-06
 - 
 
 ### Budget Burn
-- Day spend: $X / $15 cap
+- Day spend: $X / $10 cap
 - Total spend: $X / $250-300
 
 ### AEGIS Scores Today

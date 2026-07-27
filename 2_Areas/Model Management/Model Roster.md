@@ -1,7 +1,7 @@
 ---
 tags: [models, roster, api-strings, locked, reference, 3-tier]
 date-created: 2026-06-06
-date-updated: 2026-07-22
+date-updated: 2026-07-28
 source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 ---
 
@@ -17,16 +17,16 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 
 | Tier | Models | Cost | When Used |
 |------|--------|------|-----------|
-| **L1 Free** | 6 models (NIM + self-hosted + free APIs) | **$0** | Simple tasks, high volume, Ashandy says "use free" |
-| **L2 Standard** | 11 models (L1 + paid tier) | **~$40-60/mo** | Default for most tasks, auto for complex |
-| **L3 Premium** | 16 models (L2 + premium) | **~$80-120/mo** | Ashandy says "use L3" or AEGIS-99 detects critical |
+| **L1 Free** | 7 models (NIM + self-hosted + free APIs) | **$0** | Simple tasks, high volume, Ashandy says "use free" |
+| **L2 Standard** | 12 models (L1 + paid tier) | **~$40-60/mo** | Default for most tasks, auto for complex |
+| **L3 Premium** | 19 models (L2 + premium) | **~$80-120/mo** | Ashandy says "use L3" or AEGIS-99 detects critical |
 | **Nuclear** | All 22+ models in parallel | **~$150-250/mo** | Ashandy approval ONLY — catastrophic scenarios |
 
 **Auto-escalation:** L1→L2 when task complexity > threshold. L2→L3 when stakes > threshold. **NO auto L3→Nuclear** — requires human approval.
 
 ---
 
-## L1 FREE (6 Models) — $0 Cost
+## L1 FREE (7 Models) — $0 Cost
 
 > Ashandy says "use free" OR simple/volume tasks. All free via NIM credits, self-hosted, or free OpenRouter tier.
 
@@ -37,7 +37,8 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | 3 | **Ornith 1.0-35B MoE** | Self-hosted via vLLM | 262K | Coding specialist, local | Self-hosted on Lightning.ai (free compute) |
 | 4 | **Tencent Hy3** | `tencent/hy3` (OpenRouter) | 262K | Configurable reasoning, logic | FREE on OpenRouter |
 | 5 | **Poolside Laguna XS 2.1** | `poolside/laguna-xs-2.1` (OpenRouter) | 262K | Fast coding agent | FREE on OpenRouter |
-| 6 | **Gemma 4 26B** | `gemma4:26b` (Ollama) | 256K | Syntax/PEP8/lint, basic logic | Local via Ollama |
+| 6 | **Gemma 4 26B** | `gemma4:26b` (Ollama) | 256K | Multimodal, vision tasks | Local via Ollama |
+| 7 | **Qwen3.5-9B** | `qwen3.5:9b` (Ollama) | 256K | **L1 coding lead**, formatting, PEP8, lint | Local via Ollama (~6GB VRAM) |
 
 ### L1 Model Specs
 
@@ -49,10 +50,11 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | Tencent Hy3 | 295B/21B active | 100 TPS | N/A (cloud) | 71.2 |
 | Poolside Laguna XS 2.1 | 33B | 200 TPS | N/A (cloud) | 68.4 |
 | Gemma 4 26B | 26B/3.8B active | 60 TPS | 15.6GB | 77.1 |
+| Qwen3.5-9B | 9B | 140 TPS | 6GB | 76.0 |
 
 ---
 
-## L2 STANDARD (13 Models) — ~$40-60/mo
+## L2 STANDARD (7 Unique + 1 Fallback) — ~$40-60/mo
 
 > **Default tier.** Auto-selected for most tasks. Includes all L1 models + 7 paid models.
 
@@ -81,9 +83,9 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 
 ---
 
-## L3 PREMIUM (17 Models) — ~$80-120/mo
+## L3 PREMIUM (All 19 Models) — ~$80-120/mo
 
-> **High-value tier.** Ashandy says "use L3" OR AEGIS-99 detects critical stakes. Includes all L1 + L2 models + 5 premium models.
+> **High-value tier.** Ashandy says "use L3" OR AEGIS-99 detects critical stakes. Includes all L1 + L2 models + 6 premium additions.
 
 | # | Model | String | Context | Role | Cost (per 1M out) |
 |---|-------|--------|---------|------|-------------------|
@@ -218,7 +220,7 @@ Shared: 8 objectives, log to shared JSONL, escalate on 5th failure, report every
 2. **Claude Opus 4.8 vs Opus 5 (Fable 5 fallback)**: Opus 4.8 = visual + coding. Fable 5 = deep creative analysis + reasoning. Both L3.
 3. **Kimi K2.7 vs K3**: K2.7 = L2 standard, high-speed ($4), 256K context. K3 = L3 premium, large-context ($15), 1M context. NOT the same model.
 4. **GLM-5.2 vs GLM-5.1 vs GLM-5 NIM**: GLM-5.2 = L2 coding lead (1.05M). GLM-5.1 = L2 coding fallback (192K). GLM-5 NIM = L1 runtime fallback only.
-5. **GPT-5.6 Terra vs Sol**: Terra = L2 standard ($15), half cost of GPT-5.5. Sol = L3 premium ($30), agentic SOTA. Both replace GPT-5.5.
+5. **GPT-5.6 Terra vs Sol**: Terra = L2 standard ($15), half cost of GPT-5.6 Sol. Sol = L3 premium ($30), agentic SOTA. Both replace the old GPT-5.5 family.
 6. **Fable 5 vs Fable 5 Lite**: Fable 5 = real model on Anthropic API (L3). Fable 5 Lite = Opus 4.8 + behavioral prompt (backup only).
 7. **Supervisors vs Overseers**: Supervisors (3) review code AFTER AEGIS-99. Overseers (2) monitor 24/7.
 8. **GPT-5.6 Sol Ultra**: EXTREME fallback only (3x cost). Nuclear tier only. Ashandy approval required.

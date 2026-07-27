@@ -74,7 +74,7 @@ Without a memory authority hierarchy:
 ### Validation Rules
 - **Standard modules**: 2-model cross-check
 - **Critical modules**: 3-model + Lean 4 proof
-- **Module 68**: Full 9-model + Leanstral + E2B sandbox
+- **Module 68**: Full L3 Premium + Leanstral + E2B sandbox
 - **AEGIS-99 state changes**: All 6 AEGIS models must confirm
 
 ---
@@ -86,7 +86,7 @@ Without a memory authority hierarchy:
 | **Level 5: Ashandy** | Human-in-the-loop | Override any write, emergency rollback, policy changes |
 | **Level 4: Nemotron** | AEGIS Architect Primary | AEGIS score finalization, architectural state |
 | **Level 3: Supervisors** | Claude Code, Codex, OpenCode | Module state transitions, review annotations |
-| **Level 2: Build Pool** | **GLM-5.2**, GLM-5.1, GPT-5.6 Terra, Opus 4.6 | Standard module writes, code generation output |
+| **Level 2: Build Pool** | **GLM-5.2**, GLM-5.1, GPT-5.6 Terra, Opus 4.8 | Standard module writes, code generation output |
 | **Level 1: Research Pool** | Kimi K2.7, DeepSeek V4-Pro | Research briefs, preliminary findings |
 | **Level 0: Overseers** | Pi, Goose | Log entries, health check data, error flags |
 

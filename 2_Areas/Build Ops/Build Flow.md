@@ -22,7 +22,7 @@ Step 1: PRE-MODULE RESEARCH (Kimi Agent + DeepResearcher)
 Step 2: PROOF DISCOVERY (Axplorer — math patterns)
     |
     v
-Step 3: PARALLEL CODE GENERATION (6-9 models)
+Step 3: PARALLEL CODE GENERATION (L3 Premium pool)
     |
     v
 Step 4: AEGIS-99 CONSENSUS
@@ -82,8 +82,8 @@ SHIP / FAIL
 
 ## Step 3: Parallel Code Generation
 
-- Critical modules: 9-model pool
-- Standard modules: 8-model pool
+- Critical modules: L3 Premium pool
+- Standard modules: L2 Standard pool
 - Each model uses its OWN research + MASTER BRIEF
 - Each model references its research in code comments
 - Cost: ~$2-5 per module

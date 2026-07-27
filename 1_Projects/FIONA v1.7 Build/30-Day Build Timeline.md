@@ -45,11 +45,11 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_CRITICAL_MODULES_LOCKED(
 ### Modules Built (5 critical modules simultaneously)
 | Module | Name | Pool | AEGIS | Checkpoint |
 |--------|------|------|-------|------------|
-| M1 | UTM (Universal Task Manager) | 9-model critical | >=0.90 | DAG management works |
-| M11 | Orchestrator (Master Coordinator) | 9-model critical | >=0.90 | Load balancing, failover |
-| M-X | AEGIS-99 Engine | 9-model critical | >=0.95 | Self-validation passes |
-| M-Y | Security (Content Filtering + Injection Protection) | 9-model critical | >=0.95 | OWASP LLM Top 10 covered |
-| M-Z | Memory Manager (mem0 + EverMemOS) | 9-model critical | >=0.90 | Persistence across sessions |
+| M1 | UTM (Universal Task Manager) | L3 Premium (19 models) | >=0.90 | DAG management works |
+| M11 | Orchestrator (Master Coordinator) | L3 Premium (19 models) | >=0.90 | Load balancing, failover |
+| M-X | AEGIS-99 Engine | L3 Premium (19 models) | >=0.95 | Self-validation passes |
+| M-Y | Security (Content Filtering + Injection Protection) | L3 Premium (19 models) | >=0.95 | OWASP LLM Top 10 covered |
+| M-Z | Memory Manager (mem0 + EverMemOS) | L3 Premium (19 models) | >=0.90 | Persistence across sessions |
 
 ### Daily Pattern
 - Universal research (all 8 models, 30-60min)
@@ -68,10 +68,10 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_CRITICAL_MODULES_LOCKED(
 
 | Module | DCC Tool | Version | Pool | AEGIS |
 |--------|----------|---------|------|-------|
-| M26 | ComfyUI | latest main branch SHA | 9-model critical | >=0.90 |
-| M27 | Blender | 5.2.0 LTS (bpy API, headless --background) | 9-model critical | >=0.90 |
-| M28 | DaVinci Resolve | 21.0 (davinci-rest REST shim) | 9-model critical | >=0.90 |
-| M29 | Nuke | 17.0 (Python API changes from 16.x) | 9-model critical | >=0.90 |
+| M26 | ComfyUI | latest main branch SHA | L3 Premium (19 models) | >=0.90 |
+| M27 | Blender | 5.2.0 LTS (bpy API, headless --background) | L3 Premium (19 models) | >=0.90 |
+| M28 | DaVinci Resolve | 21.0 (davinci-rest REST shim) | L3 Premium (19 models) | >=0.90 |
+| M29 | Nuke | 17.0 (Python API changes from 16.x) | L3 Premium (19 models) | >=0.90 |
 
 - Rate: 2 adapters/day
 - Kimi Agent research 30min before each
@@ -85,12 +85,12 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_CRITICAL_MODULES_LOCKED(
 
 | Module | DCC Tool | Version | Pool | AEGIS |
 |--------|----------|---------|------|-------|
-| M30 | Cinema 4D | 2026.3.2 (Python API, MoGraph) | 9-model critical | >=0.90 |
-| M31 | Houdini | 21.0 (hou module in hython, VEX/Python) | 9-model critical | >=0.90 |
-| M32 | Unreal Engine | 5.8 (Remote Control API, EditorActorSubsystem) | 9-model critical | >=0.90 |
+| M30 | Cinema 4D | 2026.3.2 (Python API, MoGraph) | L3 Premium (19 models) | >=0.90 |
+| M31 | Houdini | 21.0 (hou module in hython, VEX/Python) | L3 Premium (19 models) | >=0.90 |
+| M32 | Unreal Engine | 5.8 (Remote Control API, EditorActorSubsystem) | L3 Premium (19 models) | >=0.90 |
 
 - Rate: 1-2 adapters/day
-- Full 9-model critical pool per adapter
+- Full L3 Premium pool per adapter
 
 ### CHECKPOINT: All 3 adapters launch headless, pass super-smoke-test
 
@@ -114,7 +114,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_CRITICAL_MODULES_LOCKED(
 | **Function** | Custom dental jewelry design |
 | **Tolerance** | +-0.05mm |
 | **Materials** | Biocompatible (NextDent C&B MFH resin) |
-| **Pool** | 9-model critical |
+| **Pool** | L3 Premium (19 models) |
 | **AEGIS** | >=0.95 (highest) |
 
 ### Special Protocols
@@ -143,12 +143,12 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_CRITICAL_MODULES_LOCKED(
 | **Stack** | React/Vue frontend, Python/FastAPI backend |
 | **Database** | Supabase (real-time sync) |
 | **Auth** | Supabase Auth (RLS) |
-| **Pool** | 9-model critical |
+| **Pool** | L3 Premium (19 models) |
 | **AEGIS** | >=0.90 |
 
 ### Team
 - Qwen3.7 leads frontend
-- Full 9-model pool for backend/security
+- Full L3 Premium pool for backend/security
 - Codex: Web security adversarial review
 
 ### CHECKPOINT: Web app deploys, real-time sync works, auth functional
@@ -161,9 +161,9 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_CRITICAL_MODULES_LOCKED(
 |-----------|-------|
 | **Count** | 50 modules |
 | **Rate** | ~4 modules/day |
-| **Pool** | 8-model standard (Opus 4.6, not 4.8) |
+| **Pool** | L2 Standard (12 models) |
 | **AEGIS** | >=0.85 |
-| **Research** | 4-model pool (reduced cost) |
+| **Research** | L2 research pool (reduced cost) |
 
 ### CHECKPOINT: All modules pass, no critical failures
 

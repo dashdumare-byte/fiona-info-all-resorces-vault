@@ -6,7 +6,7 @@ source: FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 
 # Critical Modules — 8 Slots
 
-> **These 8 modules get the FULL 9-model critical pool, all 3 supervisors, full overseers, and highest AEGIS thresholds.**
+> **These 8 modules get the FULL L3 Premium pool (19 models), all 3 supervisors, full overseers, and highest AEGIS thresholds.**
 
 ---
 
@@ -17,7 +17,7 @@ source: FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 | **Function** | Task decomposition, DAG management, dependency resolution |
 | **Why Critical** | Every other module depends on this for task routing |
 | **DCC** | None (infrastructure) |
-| **Pool** | 9-model critical |
+| **Pool** | L3 Premium (19 models) |
 | **AEGIS** | >=0.90 |
 | **Build Day** | Day 1 |
 
@@ -30,7 +30,7 @@ source: FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 | **Function** | Master coordinator for all 69 modules, load balancing, failover |
 | **Why Critical** | If orchestrator fails, entire system stops |
 | **DCC** | None (infrastructure) |
-| **Pool** | 9-model critical |
+| **Pool** | L3 Premium (19 models) |
 | **AEGIS** | >=0.90 |
 | **Build Day** | Day 1 |
 
@@ -43,7 +43,7 @@ source: FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 | **Function** | Mandatory gate on every output, multi-model consensus scoring |
 | **Why Critical** | This IS the quality gate — if it fails, nothing ships |
 | **DCC** | None (validation) |
-| **Pool** | 9-model critical |
+| **Pool** | L3 Premium (19 models) |
 | **AEGIS** | >=0.95 (self-validation with quantum audit) |
 | **Build Day** | Day 1 |
 
@@ -56,7 +56,7 @@ source: FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 | **Function** | Input/output sanitization, prompt injection detection, content policy |
 | **Why Critical** | One injection attack = compromised entire system |
 | **DCC** | None (security) |
-| **Pool** | 9-model critical |
+| **Pool** | L3 Premium (19 models) |
 | **AEGIS** | >=0.95 |
 | **Build Day** | Day 1 |
 | **Research Focus** | Latest attack vectors, OWASP LLM Top 10, adversarial prompting |
@@ -70,7 +70,7 @@ source: FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 | **Function** | Persistent memory across sessions, context retention, hierarchy |
 | **Why Critical** | Without memory, Fiona can't learn or maintain state |
 | **DCC** | None (memory) |
-| **Pool** | 9-model critical |
+| **Pool** | L3 Premium (19 models) |
 | **AEGIS** | >=0.90 |
 | **Build Day** | Day 1 |
 | **Research Focus** | Vector databases, memory architectures, context window optimization |
@@ -112,7 +112,7 @@ source: FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 | **Tolerance** | +-0.05mm |
 | **Materials** | Biocompatible (NextDent C&B MFH resin) |
 | **DCC** | Blender 4 (dental-specific Python API) |
-| **Pool** | 9-model critical |
+| **Pool** | L3 Premium (19 models) |
 | **AEGIS** | >=0.95 (highest threshold) |
 | **Build Day** | Day 9 (DEDICATED FULL DAY) |
 
@@ -139,7 +139,7 @@ source: FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 | **Stack** | React/Vue frontend, Python/FastAPI backend |
 | **Database** | Supabase (real-time sync) |
 | **Auth** | Supabase Auth (RLS) |
-| **Pool** | 9-model critical |
+| **Pool** | L3 Premium (19 models) |
 | **AEGIS** | >=0.90 |
 | **Build Day** | Day 10 (DEDICATED FULL DAY) |
 | **Supervisor** | Codex (GPT-5.6 Terra) for web security |

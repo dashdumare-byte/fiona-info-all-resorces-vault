@@ -6,7 +6,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 14
 
 # Budget Breakdown
 
-> **Build: $300 (30 days, $10/day cap). Runtime: $200-250/month. Daily cap: $15.**
+> **Build: $300 (30 days, $10/day cap). Runtime: $200-250/month.**
 
 ---
 

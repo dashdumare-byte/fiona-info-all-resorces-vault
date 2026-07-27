@@ -22,7 +22,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_ARCHITECTURE_v4.1.txt
 | **Kimi K2.7** | 10% | Comprehensive multi-step scan |
 | **Qwen3.7** | 3% | Web/UI specifics |
 | **MiniMax M3** | 1% | Multimodal details |
-| **Claude Opus 4.6** | 1% | Architecture patterns |
+| **Claude Opus 4.8** | 1% | Architecture patterns |
 
 **Total: 100%**
 
@@ -75,7 +75,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_ARCHITECTURE_v4.1.txt
 
 ### Why others at 1-3%?
 - Specialists for narrow domains
-- Web/UI (Qwen), multimodal (MiniMax), architecture (Opus 4.6)
+- Web/UI (Qwen), multimodal (MiniMax), architecture (Opus 4.8)
 - Supplementary, not primary
 
 ---

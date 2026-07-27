@@ -8,7 +8,7 @@ source: PULSE-TOKEN-EFFICIENCY-COMPACTOR.md (uploaded files)
 
 > **60-70% token reduction without quality loss.**
 > **Full Integration (Option A) — 10 Commandments enforced.**
-> **Critical for $300-350 budget survival.**
+> **Critical for $250-300 budget survival.**
 
 ---
 
@@ -21,7 +21,7 @@ AI models are **token-wasteful by default**:
 - No context window budgeting
 - Average read-to-output ratio: **5-10x** (target: <2.0)
 
-On a **$300-350 budget**, this waste is the difference between completing all 69 modules and running out at module 40.
+On a **$250-300 budget**, this waste is the difference between completing all 69 modules and running out at module 40.
 
 ---
 
@@ -219,7 +219,7 @@ All PULSE metrics tracked in Langfuse traces:
 | Coding patterns | 5-10% |
 | **Total** | **60-70%** |
 
-On $300-350 budget:
+On $250-300 budget:
 - Without PULSE: ~$450-500 actual spend (over budget)
 - With PULSE: ~$150-200 actual spend (under budget, $100-150 buffer)
 

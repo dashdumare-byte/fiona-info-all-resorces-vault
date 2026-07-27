@@ -15,14 +15,14 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 3
 | Task Difficulty | Model | Role |
 |-----------------|-------|------|
 | **EXTREME CRITICAL** | Claude Opus 4.8 | Deep architectural planning, complex debugging 10+ files, final review, visual design |
-| **HIGH** | Claude Opus 4.6 | High-level logic, module structure, integration patterns, standard debugging |
-| **LOW** | Claude Sonnet 4.6 | Code generation, data formatting, boilerplate, unit tests, simple fixes |
+| **HIGH** | Claude Opus 4.8 | High-level logic, module structure, integration patterns, standard debugging |
+| **LOW** | Claude Sonnet 4.8 | Code generation, data formatting, boilerplate, unit tests, simple fixes |
 
 ### Auto-Assignment Rules
 - If task involves >5 files → Opus 4.8
 - If task involves architectural decisions → Opus 4.8
-- If task is standard module implementation → Opus 4.6
-- If task is repetitive/formatting → Sonnet 4.6
+- If task is standard module implementation → Opus 4.8
+- If task is repetitive/formatting → Sonnet 4.8
 - **Ashandy override**: "Use Opus 4.8 for this" or "Use Sonnet for this"
 
 ---
@@ -31,9 +31,9 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 3
 
 | Task Difficulty | Model | Role |
 |-----------------|-------|------|
-| **EXTREME CRITICAL** | GPT-5.6 Sol (openai/gpt-5.5-pro) | Deep architectural planning, complex debugging, final review |
+| **EXTREME CRITICAL** | GPT-5.6 Sol (openai/gpt-5.6-sol) | Deep architectural planning, complex debugging, final review |
 | **HIGH** | GPT-5.6 Terra (openai/gpt-5.6-terra) | Feature implementation, complex refactoring, technical documentation |
-| **LOW** | GPT-5.4 (openai/gpt-5.4) | Repetitive coding, unit tests, boilerplate, formatting, simple bugs |
+| **LOW** | GPT-5.6 Luna (openai/gpt-5.6-luna) | Repetitive coding, unit tests, boilerplate, formatting, simple bugs |
 
 ### GPT-5.6 Sol Activation Protocol
 1. Fiona detects task difficulty exceeds GPT-5.6 Terra capability
@@ -70,13 +70,13 @@ Analyze difficulty + scope
     |
     +---> <2s, simple -----------> L1 Free: MiniMax M3 + Qwen3.5-9B + Poolside Laguna (Dynamo cache) (no supervisors)
     |
-    +---> <10s, standard --------> 8-model pool + AEGIS-99 >=0.85
+    +---> <10s, standard --------> L2 Standard (12 models) + AEGIS-99 >=0.85
     |
     +---> <30s, coding ----------> Coding Brain (6 models) + Codex review
     |                                + Claude cascade assigns Opus/Sonnet
     |                                + OpenAI cascade assigns GPT-5.6 Terra/Luna
     |
-    +---> minutes/hours, critical -> 9-model pool + all supervisors + overseers
+    +---> minutes/hours, critical -> L3 Premium pool + all supervisors + overseers
                                      + ALL cascades active
                                      + Quantum involved
                                      + AEGIS >=0.90

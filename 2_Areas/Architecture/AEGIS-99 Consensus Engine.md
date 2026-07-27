@@ -32,10 +32,10 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 1
 
 | Module Type | Threshold | Models Required | Research Consensus |
 |-------------|-----------|-----------------|-------------------|
-| Standard | >=0.85 | 8-model pool | >=0.90 |
-| Critical | >=0.90 | 9-model pool | >=0.90 |
-| Module 68 (B4D Grillz) | >=0.95 | 9-model + quantum audit | >=0.95 |
-| Security self-validation | >=0.95 | 9-model + quantum audit | >=0.95 |
+| Standard | >=0.85 | L2 Standard (12 models) | >=0.90 |
+| Critical | >=0.90 | L3 Premium (19 models) | >=0.90 |
+| Module 68 (B4D Grillz) | >=0.95 | L3 Premium + quantum audit | >=0.95 |
+| Security self-validation | >=0.95 | L3 Premium + quantum audit | >=0.95 |
 | Research phase | >=0.90 | Research vote weighted | >=0.90 |
 
 ---
@@ -71,7 +71,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 1
 | Kimi K2.7 | 10% | Comprehensive scan |
 | Qwen3.7 | 3% | Web/UI specifics |
 | MiniMax M3 | 1% | Multimodal |
-| Claude Opus 4.6 | 1% | Architecture |
+| Claude Opus 4.8 | 1% | Architecture |
 
 ---
 

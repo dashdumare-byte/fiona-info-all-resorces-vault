@@ -14,9 +14,9 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 4
 
 | Attribute | Value |
 |-----------|-------|
-| **Primary** | Opus 4.8 |
-| **Secondary** | Opus 4.6 |
-| **Tertiary** | Sonnet 4.6 |
+| **Primary** | Opus 5 |
+| **Secondary** | Opus 4.8 |
+| **Tertiary** | Sonnet 4.8 |
 | **Config File** | CLAUDE.md (vault-as-supervisor replaces static file) |
 | **Smart Routing** | Automatic by task difficulty |
 
@@ -32,7 +32,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 4
 ### When Activated
 - All coding tasks (automatic)
 - Critical tasks (Opus 4.8 forced)
-- Standard tasks (Opus 4.6 auto-selected)
+- Standard tasks (Opus 4.8 auto-selected)
 - Repetitive tasks (Sonnet auto-selected)
 
 ---
@@ -43,7 +43,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 4
 |-----------|-------|
 | **Primary** | GPT-5.6 Terra |
 | **Extreme** | GPT-5.6 Sol (Ashandy approval only) |
-| **Fallback** | GPT-5.4 |
+| **Fallback** | GPT-5.6 Luna |
 | **Config File** | AGENTS.md (vault-as-supervisor replaces static file) |
 | **Plugin** | codex-plugin-cc |
 

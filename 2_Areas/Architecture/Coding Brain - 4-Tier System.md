@@ -171,7 +171,7 @@ All L1 + L2 + L3 models run in parallel. AEGIS-99 >=0.95 consensus. GPT-5.6 Sol 
 | L3 Premium | ~$300-400 total | ~$60-80/mo |
 | Nuclear | ~$500 (Day 30 only) | ~$100-150/mo |
 
-**Total build coding cost:** ~$450-600 (within $300 budget if L3 used sparingly)
+**Total build coding cost:** ~$200-350 (with L1 free models for 40% of tasks, L2 standard for 50%, L3 premium for 10%)
 **Total runtime coding cost:** ~$120-180/mo (within $200-250/mo total budget)
 
 ---

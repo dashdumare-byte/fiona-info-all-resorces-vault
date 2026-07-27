@@ -3,7 +3,7 @@ tags: [free-credits, budget, aws, google, nvidia, anthropic, strategy, locked]
 date-created: 2026-07-22
 ---
 
-# Free Credits Strategy — Maximizing FIONA's $300-350 Budget
+# Free Credits Strategy — Maximizing FIONA's $250-300 Budget
 
 > **$2,005+ in free credits available before spending $1.**
 > **Stack multiple providers to cover the entire 30-day build + runtime.**
@@ -69,7 +69,7 @@ date-created: 2026-07-22
 
 **Total from free credits alone: ~$2,005+**
 
-This covers the ENTIRE 30-day build ($300 budget) with $1,700 left over for runtime.
+This covers the ENTIRE 30-day build ($250-300 budget) with $1,700+ left over for runtime.
 
 ---
 

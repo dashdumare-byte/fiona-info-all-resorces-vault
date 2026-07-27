@@ -49,7 +49,7 @@ date-created: 2026-07-22
 **What:** Compact models (1-10B params) for edge devices, local inference.
 **In FIONA:**
 - **Qwen3.5-9B** (L1 coding lead) — 82.5% MMLU-Pro, 76% HumanEval, Apache 2.0, ~6GB VRAM
-- **Gemma 4 E4B** (ultra-lightweight fallback) — 78.1% MMLU-Pro, 128K context, ~3.5GB VRAM
+- **Gemma 4 E4B** (ultra-lightweight fallback) — 78.1% MMLU-Pro, 256K context, ~3.5GB VRAM
 - **Ornith-9B** (offline emergency) — 69.4% SWE-Bench, ~6GB VRAM
 **Tier:** L1 Free
 **Action:** Qwen3.5-9B replaces Gemma 4 26B for L1 coding. Gemma 4 stays for multimodal.
