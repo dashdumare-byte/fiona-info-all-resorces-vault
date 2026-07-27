@@ -16,7 +16,7 @@ source: FIONA_MEMORY_SYSTEM_LOCKED(1).txt + OBSIDIAN_SUPABASE_FIONA_ANALYSIS(1).
 | Component | Technology | Purpose | Layer |
 |-----------|-----------|---------|-------|
 | **Structured Data** | Supabase | Metadata, auth, real-time sync, pgvector | L2 |
-| **Vector Search** | Chroma | Creative taste embeddings, multi-modal semantic search | L2 |
+| **Vector Search** | Chroma + Supabase pgvector | **Harrier 3-Tier**: GTE-Small (L1) / BGE-Large (L2) / NV-Embed-v2 Q4 (L3) | L1-L3 |
 | **Personal Vault** | Obsidian | Ashandy's knowledge (this vault), creative direction | L1 (human) |
 | **Taste Learning** | ASI-Evolve | Self-optimization, embedding tuning, preference learning | L3 |
 | **File Storage** | Supabase Storage | Raw files (books, videos, images) CDN | L2 |
