@@ -148,7 +148,7 @@ curl https://api.anthropic.com/v1/messages \
 
 | # | Tool | Models | Config | Role |
 |---|------|--------|--------|------|
-| 1 | Claude Code | Opus 4.8 / Opus 5 (Fable 5 fallback) + Sonnet | CLAUDE.md | Production code, bugs, refactor, memory, security, DCC gate |
+| 1 | Claude Code | Opus 4.8 / Opus 5 (Fable 5 fallback) + Sonnet | CLAUDE.md + PULSE.md | Production code, bugs, refactor, token efficiency, memory, security, DCC gate |
 | 2 | Codex | GPT-5.6 Sol/Terra + plugin | AGENTS.md | Validate AEGIS-99, code quality, cross-check, flag deadlock |
 | 3 | OpenCode | Qwen3.7 + Nemotron | opencode.json | Independent review, alternative impl, edge cases |
 
