@@ -28,7 +28,7 @@ Autonomous AI Creative Director for Pure Magic. Orchestrates 7 DCC tools for end
 ## Quick Reference Card
 
 ### AEGIS-99
-Nemotron 3 Ultra 550B 20% (NEW — 300 t/s, open weights, #1 US) | GPT-5.6 Terra 15% | V4-Pro 15% | D-Wave sandbox (learning only, not production) | MiniMax M3 (open, image+video) 15% | Qwen3.7 10% | Safety 10%
+Nemotron 3 Ultra 550B 20% (NEW) | GPT-5.6 Terra 15% | V4-Pro 15% | MiniMax M3 15% | Qwen3.7 10% | Safety 10% | D-Wave = sandbox only (no votes)
 Threshold: >=0.85 standard | >=0.90 critical | >=0.95 Module 68
 
 ### 9-Model Critical Pool
