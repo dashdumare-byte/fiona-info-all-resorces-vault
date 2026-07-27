@@ -20,7 +20,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | **L1 Free** | 6 models (NIM + self-hosted + free APIs) | **$0** | Simple tasks, high volume, Ashandy says "use free" |
 | **L2 Standard** | 11 models (L1 + paid tier) | **~$40-60/mo** | Default for most tasks, auto for complex |
 | **L3 Premium** | 16 models (L2 + premium) | **~$80-120/mo** | Ashandy says "use L3" or AEGIS-99 detects critical |
-| **Nuclear** | All 20+ models in parallel | **~$150-250/mo** | Ashandy approval ONLY — catastrophic scenarios |
+| **Nuclear** | All 22+ models in parallel | **~$150-250/mo** | Ashandy approval ONLY — catastrophic scenarios |
 
 **Auto-escalation:** L1→L2 when task complexity > threshold. L2→L3 when stakes > threshold. **NO auto L3→Nuclear** — requires human approval.
 
@@ -52,7 +52,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 
 ---
 
-## L2 STANDARD (11 Models) — ~$40-60/mo
+## L2 STANDARD (12 Models) — ~$40-60/mo
 
 > **Default tier.** Auto-selected for most tasks. Includes all L1 models + 5 paid models.
 
@@ -64,6 +64,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | 10 | **GLM-5.2** | `z-ai/glm-5.2` | 1.05M | **Coding brain (lead)** | $3 |
 | 10b | GLM-5.1 (fallback) | `z-ai/glm-5.1` | 192K | Coding brain (fallback) | $2.86 |
 | 11 | **Qwen3.7-Max** | `qwen3.7-max-preview` | 260K | Web/UI code, agent-centric | $1.60 |
+| 11b | **Sakana Fugu** | `sakana/fugu` | 1M | Multi-agent orchestration, balanced latency | $8 |
 
 ### L2 Model Specs
 
@@ -74,10 +75,11 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | Grok 4.5 | 64.7% | 83.3% | 53.0% | 80 |
 | GLM-5.2 | 58.0% | 84.0% | 55.0% | 90 |
 | Qwen3.7-Max | 52.0% | 80.0% | 48.0% | 120 |
+| Sakana Fugu | — | — | — | Multi-agent orchestration, balanced latency |
 
 ---
 
-## L3 PREMIUM (16 Models) — ~$80-120/mo
+## L3 PREMIUM (17 Models) — ~$80-120/mo
 
 > **High-value tier.** Ashandy says "use L3" OR AEGIS-99 detects critical stakes. Includes all L1 + L2 models + 5 premium models.
 
@@ -89,6 +91,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | 14 | **Opus 4.8** | `anthropic/claude-opus-4.8` | 1M | Visual architecture, critical coding, Fable 5 Lite backup | $25 |
 | 15 | **DeepSeek V4-Pro** | `deepseek/deepseek-v4-pro` | 1.05M | Raw code volume, long-horizon | $8 |
 | 16 | **Kimi K3** | `moonshotai/kimi-k3` | 1.05M | Large-context coding, frontend/design, multimodal | $15 |
+| 16b | **Sakana Fugu Ultra** | `sakana/fugu-ultra` | 1M | **Multi-agent orchestration, 73.7 SWE-Bench Pro** | $12 |
 
 ### L3 Model Specs
 
@@ -99,6 +102,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | Opus 4.8 | 69.2% | 78.9% | 45.2% | Visual + coding, most proven |
 | DeepSeek V4-Pro | 64.3% | 83.4% | 46.9% | 1.05M context, hybrid attention |
 | Kimi K3 | ~62% (est) | 85.0% (est) | ~50% (est) | 1M context, frontend #1, vision-in-loop |
+| Sakana Fugu Ultra | 73.7% | — | — | Multi-agent orchestration, no export control risk |
 
 ---
 
@@ -258,7 +262,7 @@ Shared: 8 objectives, log to shared JSONL, escalate on 5th failure, report every
 
 ### Nuclear Consensus (All Models)
 
-All 20+ models vote. AEGIS-99 >=0.95 required. GPT-5.6 Sol Ultra coordinates 4 parallel subagents.
+All 22+ models vote. AEGIS-99 >=0.95 required. GPT-5.6 Sol Ultra coordinates 4 parallel subagents.
 
 ---
 
