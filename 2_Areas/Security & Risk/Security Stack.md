@@ -6,7 +6,7 @@ source: SENTRY & SNYK analysis + FIONA_SECURITY_STACK_COMPLETE_LOCKIN.md
 
 # Security Stack
 
-> **31 tools across build + runtime. Zero-tolerance security posture.**
+> **32 tools (NVIDIA OpenShell added as execution sandbox) across build + runtime. Zero-tolerance security posture.**
 > Expanded from basic Snyk+Sentry to full 31-tool stack during Layer 2 analysis.
 
 ---
@@ -151,4 +151,4 @@ Classify severity (auto + supervisor)
 
 ---
 
-*Total: 31 tools | Build: 16 | Runtime: 15 | Zero additional cost (all free tier/self-hosted)*
+*Total: 32 tools (NVIDIA OpenShell added as execution sandbox) | Build: 16 | Runtime: 15 | Zero additional cost (all free tier/self-hosted)*
