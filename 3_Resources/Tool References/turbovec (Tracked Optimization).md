@@ -46,7 +46,7 @@ Rust vector index with Python bindings. Built on Google's TurboQuant algorithm. 
 
 ## Build vs Runtime
 
-### NOT in 16-Day Build
+### NOT in 30-Day Build
 | Our Stack | turbovec |
 |-----------|----------|
 | Chroma | Full vector DB: CRUD + metadata + multi-modal + filtering |

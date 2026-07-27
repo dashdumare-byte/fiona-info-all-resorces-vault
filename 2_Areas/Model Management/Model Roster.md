@@ -52,9 +52,9 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 
 ---
 
-## L2 STANDARD (12 Models) — ~$40-60/mo
+## L2 STANDARD (13 Models) — ~$40-60/mo
 
-> **Default tier.** Auto-selected for most tasks. Includes all L1 models + 5 paid models.
+> **Default tier.** Auto-selected for most tasks. Includes all L1 models + 7 paid models.
 
 | # | Model | String | Context | Role | Cost (per 1M out) |
 |---|-------|--------|---------|------|-------------------|
@@ -65,6 +65,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | 10b | GLM-5.1 (fallback) | `z-ai/glm-5.1` | 192K | Coding brain (fallback) | $2.86 |
 | 11 | **Qwen3.7-Max** | `qwen3.7-max-preview` | 260K | Web/UI code, agent-centric | $1.60 |
 | 11b | **Sakana Fugu** | `sakana/fugu` | 1M | Multi-agent orchestration, balanced latency | $8 |
+| 11c | **GPT-5.6 Luna** | `openai/gpt-5.6-luna` | 1.1M | Cheap volume coding, router/pre-processor | $6 |
 
 ### L2 Model Specs
 
@@ -76,6 +77,7 @@ source: FIONA_v1.7_ALL_MODELS_ROSTER(1).txt
 | GLM-5.2 | 58.0% | 84.0% | 55.0% | 90 |
 | Qwen3.7-Max | 52.0% | 80.0% | 48.0% | 120 |
 | Sakana Fugu | — | — | — | Multi-agent orchestration, balanced latency |
+| GPT-5.6 Luna | 62.7% | 93.0% | 84.7% | Cheap volume coding, 1.1M context |
 
 ---
 
@@ -222,6 +224,7 @@ Shared: 8 objectives, log to shared JSONL, escalate on 5th failure, report every
 8. **GPT-5.6 Sol Ultra**: EXTREME fallback only (3x cost). Nuclear tier only. Ashandy approval required.
 9. **L1 Gemma 4 26B vs 31B**: 26B = default (15.6GB VRAM). 31B = upgrade if quality insufficient (17.4GB VRAM).
 10. **Nuclear tier**: Ashandy explicit approval ONLY. No auto-escalation from L3. Say "go nuclear" to activate.
+11. **GPT-5.6 Luna**: L2 cheap volume coding at $6/M. 1.1M context but weak long-context recall (41.3% MRCR). Use as router/pre-processor, not for complex analysis.
 
 ---
 

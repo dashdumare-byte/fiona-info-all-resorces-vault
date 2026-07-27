@@ -10,16 +10,16 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 14
 
 ---
 
-## Build Budget (16 Days)
+## Build Budget (30 Days)
 
 | Category | Daily | Days | Total |
 |----------|-------|------|-------|
-| API calls (8 models + Pro occasional) | $6-10 | 16 | $96-160 |
-| D-Wave Leap | $0 | 16 | $0 (LaunchPad 3-month free) |
-| Temporal.io | $0-3 | 16 | $0-50 |
-| Supabase | $0-1.5 | 16 | $0-25 |
-| Research tools | $1.25 | 16 | ~$20 |
-| Owl Alpha | $0 | 16 | $0 (free on OpenRouter) |
+| API calls (22+ models, 4-tier system) | $6-10 | 30 | $180-300 |
+| D-Wave Leap | $0 | 30 | $0 (sandbox only, 1 min/mo) |
+| Temporal.io | $0-3 | 30 | $0-50 |
+| Supabase | $0-1.5 | 30 | $0-25 |
+| Research tools | $1.25 | 30 | ~$37 |
+| Owl Alpha | $0 | 30 | $0 (free on OpenRouter) |
 | **TOTAL BUILD** | | | **~$150-250** |
 
 ### Daily Cap Enforcement
@@ -52,8 +52,8 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 14
 | B4D Grillz (Day 9) | 1 | $15 (full cap) | $15 |
 | Web App (Day 10) | 1 | $12-15 | $12-15 |
 | Standard Modules (Days 11-14) | 4 | $6-8 | $24-32 |
-| Integration + Deploy (Days 15-16) | 2 | $8-10 | $16-20 |
-| **TOTAL** | **16** | | **$153-163** |
+| Integration + Deploy (Days 29-30) | 2 | $8-10 | $16-20 |
+| **TOTAL** | **30** | | **$250-350** |
 
 **Well within $250-300 budget. Comfortable margin for retries.**
 
