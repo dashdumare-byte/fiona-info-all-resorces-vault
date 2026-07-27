@@ -14,7 +14,7 @@ date-created: 2026-07-22
 
 | # | Provider | Free Credits | How to Get | Models Accessible | Credit Card? | Expires |
 |---|----------|-------------|------------|-------------------|--------------|---------|
-| 1 | **AWS BedRock** | **$200** ($100 signup + $100 guided) | New AWS account → complete guided setup | Claude (Opus 4.8, Fable 5), Llama, Mistral, Titan, Nova | Yes | 6 months |
+| 1 | **AWS BedRock** | **$200** ($100 signup + $100 guided) | New AWS account → complete guided setup | Claude (Opus 5 primary, Opus 4.8, Fable 5 fallback), Llama, Mistral, Titan, Nova | Yes | 6 months |
 | 2 | **AWS Activate (Founders)** | **$1,000** | Apply at aws.amazon.com/startups/credits with company website | Same as BedRock + all AWS services | Yes | Credit-based |
 | 3 | **AWS Activate (Portfolio/VC-backed)** | **$5,000-$100,000+** | Requires approved VC/incubator partner | Same as above | Yes | Credit-based |
 | 4 | **Google Cloud (New Project)** | **$300** | New Google Cloud project | Gemini Pro, Imagen, all Vertex AI | Yes | 90 days |
@@ -22,7 +22,7 @@ date-created: 2026-07-22
 | 6 | **Google for Startups (VC-backed)** | **$25,000-$350,000** | Portfolio tier with VC partner | Same as above | Yes | 1-2 years |
 | 7 | **NVIDIA NIM** | **~1,000 credits** (~1,000 API calls) | Sign up at build.nvidia.com | Nemotron Ultra, Llama, DeepSeek, Qwen, GLM-5.2, Mistral | **NO** | Monthly reset |
 | 8 | **NVIDIA AI Enterprise (90-day trial)** | **~4,000 additional credits** | Add business email to NVIDIA account | Same as above | **NO** | 90 days |
-| 9 | **Anthropic (Starter)** | **~$5** | Sign up at console.anthropic.com | All Claude models (Opus, Sonnet, Haiku, Fable 5) | **NO** | Until used |
+| 9 | **Anthropic (Starter)** | **~$5** | Sign up at console.anthropic.com | All Claude models (Opus 5, Opus 4.8, Sonnet, Haiku, Fable 5 fallback) | **NO** | Until used |
 | 10 | **Anthropic (Corporate email program)** | **$50-$300** (2x match on deposit) | Sign up with corporate email, deposit $50-$300 | Same as above | **NO** for signup |
 | 11 | **Anthropic (AI Perks stacked)** | **$1,000-$25,000+** | Apply through AI Perks accelerator programs | Same as above | No for application |
 | 12 | **AgentRouter** | **$200** with referral link | Sign up at agentrouter.org with referral | Claude, GPT-5, DeepSeek, GLM | **NO** | Until used |
@@ -60,11 +60,11 @@ date-created: 2026-07-22
 | 2 | Cerebras | 1M tokens/day | Llama 4 Scout, Qwen3, DeepSeek R1 (**FREE daily**) |
 | 3 | Groq | 14,400 req/day | Llama 3.1 70B, Kimi K2, GPT-OSS 120B (**FREE daily**) |
 | 4 | Google AI Studio | 250 req/day | Gemini 2.5 Flash 1M context (**FREE daily**) |
-| 5 | Anthropic starter | $5 | Claude Opus 4.8, Fable 5 testing |
-| 6 | AWS BedRock | $200 | Claude Opus 4.8, Fable 5, Llama, Mistral |
+| 5 | Anthropic starter | $5 | Claude Opus 5 primary, Fable 5 fallback testing |
+| 6 | AWS BedRock | $200 | Claude Opus 5 (primary), Opus 4.8, Fable 5 (fallback), Llama, Mistral |
 | 7 | Google Cloud | $300 | Gemini Pro, Imagen |
 | 8 | AgentRouter | $200 | Claude, GPT-5, DeepSeek via one API |
-| 9 | Anthropic corporate | $300 (2x match) | More Claude/Fable 5 |
+| 9 | Anthropic corporate | $300 (2x match) | More Claude (Opus 5 primary, Fable 5 fallback) |
 | 10 | AWS Activate Founders | $1,000 | Extended BedRock access |
 
 **Total from free credits alone: ~$2,005+**
@@ -81,7 +81,7 @@ This covers the ENTIRE 30-day build ($300 budget) with $1,700 left over for runt
 | **GLM-5.2** | NVIDIA NIM | FREE |
 | **MiniMax M3** | NVIDIA NIM | FREE |
 | **Claude Opus 4.8** | AWS BedRock ($200) + Anthropic ($5 + $300) | $505 total |
-| **Fable 5** | AWS BedRock ($200) + Anthropic ($305) | $505 total |
+| **Fable 5 (fallback)** | AWS BedRock ($200) + Anthropic ($305) | $505 total |
 | **GPT-5.6 Terra/Sol** | AgentRouter ($200) | $200 |
 | **Kimi K2.7 / K3** | Groq free tier (14,400/day) for K2 | FREE daily |
 | **DeepSeek V4-Pro** | NVIDIA NIM + Cerebras | FREE |

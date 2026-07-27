@@ -50,7 +50,7 @@ AEGIS-99 Research Consensus >=0.90?
 |-------|---------------|---------------|
 | **Claude Opus 4.8** | Visual/debugging — screenshots, UI workflows, visual error patterns | Context7, Firecrawl |
 | **Claude Opus 4.6** | Architecture — module structure, dependency chains, integration | GitNexus, pyan3 |
-| **GPT-5.5** | Adversarial — what breaks, edge cases, security vulnerabilities | Tavily, Brave Search |
+| **GPT-5.6 Terra** | Adversarial — what breaks, edge cases, security vulnerabilities | Tavily, Brave Search |
 | **Qwen3.7** | Web/UI — frontend patterns, React/Vue components, responsive | Firecrawl, Markdownify |
 | **MiniMax M3** | Multimodal — image/video/audio APIs, texture, materials. **Native image+video input** (open-source M3) enables visual research: screenshots, UI workflows, reference images | Exa, Brave Search |
 | **GLM-5.2** | **Deep coding — Python/C++ patterns, library versions, PEP8 (lead)** | Context7, GitHub MCP |
@@ -84,7 +84,7 @@ Every model MUST produce:
 ## 4. BEST PRACTICES (Semantic Scholar / Consensus validated)
 ## 5. KNOWN ISSUES (Exa / Brave validated)
 ## 6. INTEGRATION POINTS (GitNexus validated)
-## 7. SECURITY CONSIDERATIONS (GPT-5.5 adversarial scan)
+## 7. SECURITY CONSIDERATIONS (GPT-5.6 Terra adversarial scan)
 ## 8. VISUAL/DEBUGGING NOTES (Opus 4.8 only)
 ## 9. RESEARCH CONFIDENCE SCORE (1-10)
 ## 10. CROSS-VERIFICATION NOTES (agreements/disagreements/flags)
@@ -96,7 +96,7 @@ Every model MUST produce:
 
 | Module Type | Research Cost | Models |
 |-------------|--------------|--------|
-| Standard | ~$1.50 | 4-model pool (Opus 4.6, GPT-5.5, **GLM-5.2**, GLM-5.1, Kimi) |
+| Standard | ~$1.50 | 4-model pool (Opus 4.6, GPT-5.6 Terra, **GLM-5.2**, GLM-5.1, Kimi) |
 | Critical | ~$3.90 | 8-model full pool |
 | Module 68 | ~$5.00+ | 8-model + Axplorer + Leanstral |
 

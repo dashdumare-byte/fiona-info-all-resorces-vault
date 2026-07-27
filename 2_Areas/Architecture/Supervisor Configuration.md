@@ -41,8 +41,8 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 4
 
 | Attribute | Value |
 |-----------|-------|
-| **Primary** | GPT-5.5 |
-| **Extreme** | GPT-5.5 Pro (Ashandy approval only) |
+| **Primary** | GPT-5.6 Terra |
+| **Extreme** | GPT-5.6 Sol (Ashandy approval only) |
 | **Fallback** | GPT-5.4 |
 | **Config File** | AGENTS.md (vault-as-supervisor replaces static file) |
 | **Plugin** | codex-plugin-cc |

@@ -15,7 +15,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_ARCHITECTURE_v4.1.txt
 | Model | Research Weight | Reason |
 |-------|----------------|--------|
 | **Claude Opus 4.8** | 25% | Visual/debugging research depth |
-| **GPT-5.5** | 25% | Adversarial research depth |
+| **GPT-5.6 Terra** | 25% | Adversarial research depth |
 | **DeepSeek V4-Pro** | 20% | Code pattern research depth |
 | **GLM-5.2** | **15%** | **Coding accuracy, library versions (lead)** |
 | GLM-5.1 | 5% | Coding accuracy, library versions (fallback) |
@@ -35,7 +35,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_ARCHITECTURE_v4.1.txt
 | Model | Finding | Weight | Contribution |
 |-------|---------|--------|--------------|
 | Opus 4.8 | Visual API bug in headless mode (screenshot proof) | 25% | Visual validation |
-| GPT-5.5 | Security vulnerability in bpy autoexec | 25% | Security flag |
+| GPT-5.6 Terra | Security vulnerability in bpy autoexec | 25% | Security flag |
 | V4-Pro | Community fix #47 on GitHub for same bug | 20% | Solution path |
 | **GLM-5.2** | Python syntax confirmed, PEP8 compliant approach | **15%** | **Code quality (lead)** |
 | GLM-5.1 | Python syntax confirmed, PEP8 compliant approach | 5% | Code quality (fallback) |
@@ -44,7 +44,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_ARCHITECTURE_v4.1.txt
 
 ### MASTER BRIEF = Blended output
 - Highest-weight findings prioritized
-- Visual bug (Opus 25%) + Security fix (GPT-5.5 25%) = top priority
+- Visual bug (Opus 25%) + Security fix (GPT-5.6 Terra 25%) = top priority
 - Community fix (V4-Pro 20%) = implementation path
 - Code approach (**GLM-5.2 15%**, GLM-5.1 5%) = syntax standard
 - Documentation (Kimi 10%) = context reference
@@ -53,9 +53,9 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_ARCHITECTURE_v4.1.txt
 
 ## Weight Rationale
 
-### Why Opus 4.8 and GPT-5.5 at 25% each?
+### Why Opus 4.8 and GPT-5.6 Terra at 25% each?
 - Opus 4.8: Only model doing visual research (screenshots, UI workflows)
-- GPT-5.5: Only model doing adversarial research (what breaks, edge cases)
+- GPT-5.6 Terra: Primary model for adversarial research (what breaks, edge cases)
 - These are UNIQUE capabilities — no other model covers these angles
 
 ### Why V4-Pro at 20%?

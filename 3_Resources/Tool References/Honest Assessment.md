@@ -20,7 +20,7 @@ source: FIONA_v1.7_HONEST_ASSESSMENT(1).txt
 
 ### 1. AEGIS-99 Consensus Engine
 - Nemotron: SWE-bench Verified #1 (60.47%)
-- GPT-5.5: Confirmed live on OpenRouter
+- GPT-5.6 Terra: Confirmed live on OpenRouter
 - DeepSeek V4-Pro: 93.5% LiveCodeBench, 1.6T params, 1M context
 - **Verdict**: Better than most production AI systems
 
@@ -78,7 +78,7 @@ source: FIONA_v1.7_HONEST_ASSESSMENT(1).txt
 ### Low Risk
 | Risk | Mitigation |
 |------|------------|
-| GPT-5.5 API reliability | OpenRouter fallback, proven since Apr 2026 |
+| GPT-5.6 Terra API reliability | OpenRouter fallback, proven since Apr 2026 |
 | DeepSeek V4-Pro integration | Tested in merge session |
 | Pi + Goose in practice | Configure during merge, Day 0 testing |
 

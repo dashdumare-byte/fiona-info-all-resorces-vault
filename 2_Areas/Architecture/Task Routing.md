@@ -45,7 +45,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 8
 | **Models** | Fiona Coding Brain (6-9 models, task-dependent) |
 | **AEGIS-99** | Mandatory >=0.85 |
 | **Research** | Universal (selected models) |
-| **Supervisors** | Codex (GPT-5.5) adversarial review |
+| **Supervisors** | Codex (GPT-5.6 Terra) adversarial review |
 | **Overseers** | Active monitoring |
 | **Smart Routing** | Claude + OpenAI cascades active |
 | **Quantum** | Not involved |
@@ -55,7 +55,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 8
 **GLM-5.2** (lead) + GLM-5.1 (fallback) + Qwen3.7 + Kimi K2.7 + Mistral-small + MiMo-V2-Pro
 
 ### Difficult Coding Brain (+ added)
-+ Claude Opus 4.8 + GPT-5.5
++ Claude Opus 4.8 + GPT-5.6 Terra
 
 ### Extreme Coding Brain (+ added)
 + DeepSeek V4-Pro + MiniMax M3
@@ -75,7 +75,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 8
 | **Cursor Gate** | Mandatory |
 | **Smart Routing** | ALL cascades active |
 | **Quantum** | FULL strategy + optimization |
-| **GPT-5.5 Pro** | Available on Ashandy approval |
+| **GPT-5.6 Sol** | Available on Ashandy approval |
 | **Examples** | UE5 environment, dental grillz, freight algo, full music video |
 
 ---

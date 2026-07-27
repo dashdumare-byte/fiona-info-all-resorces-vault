@@ -16,7 +16,7 @@ source: FIONA_v1.7_MERGE_BUILD_PLAN(1).txt + FIONA_v1.7_CRITICAL_MODULES_LOCKED(
 - [ ] Z.ai API key -> test **GLM-5.2** (GLM-5.1 fallback)
 - [ ] NVIDIA NIM free dev key -> test Nemotron
 - [ ] Alibaba Cloud Model Studio -> test Qwen3.7
-- [ ] OpenRouter API key -> test GPT-5.5, Kimi K2.7, V4-Pro, MiniMax M3
+- [ ] OpenRouter API key -> test GPT-5.6 Terra, Kimi K2.7, V4-Pro, MiniMax M3
 - [ ] Vertex AI project ID -> test Claude Opus 4.8
 - [ ] AWS Bedrock credentials -> test Claude fallback
 - [ ] Moonshot API key -> test Kimi Agent mode

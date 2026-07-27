@@ -31,15 +31,15 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 3
 
 | Task Difficulty | Model | Role |
 |-----------------|-------|------|
-| **EXTREME CRITICAL** | GPT-5.5 Pro (openai/gpt-5.5-pro) | Deep architectural planning, complex debugging, final review |
-| **HIGH** | GPT-5.5 (openai/gpt-5.5) | Feature implementation, complex refactoring, technical documentation |
+| **EXTREME CRITICAL** | GPT-5.6 Sol (openai/gpt-5.5-pro) | Deep architectural planning, complex debugging, final review |
+| **HIGH** | GPT-5.6 Terra (openai/gpt-5.6-terra) | Feature implementation, complex refactoring, technical documentation |
 | **LOW** | GPT-5.4 (openai/gpt-5.4) | Repetitive coding, unit tests, boilerplate, formatting, simple bugs |
 
-### GPT-5.5 Pro Activation Protocol
-1. Fiona detects task difficulty exceeds GPT-5.5 capability
-2. Fiona asks Ashandy: "This task requires GPT-5.5 Pro. Approve? (Yes/No/Explain)"
-3. Ashandy approves → Switch to GPT-5.5 Pro for this task
-4. Task completes → Auto-switch back to GPT-5.5
+### GPT-5.6 Sol Activation Protocol
+1. Fiona detects task difficulty exceeds GPT-5.6 Terra capability
+2. Fiona asks Ashandy: "This task requires GPT-5.6 Sol. Approve? (Yes/No/Explain)"
+3. Ashandy approves → Switch to GPT-5.6 Sol for this task
+4. Task completes → Auto-switch back to GPT-5.6 Terra
 5. OR: Ashandy pre-approves: "For all critical tasks today, use Pro"
 
 ---
@@ -74,7 +74,7 @@ Analyze difficulty + scope
     |
     +---> <30s, coding ----------> Coding Brain (6 models) + Codex review
     |                                + Claude cascade assigns Opus/Sonnet
-    |                                + OpenAI cascade assigns GPT-5.5/5.4
+    |                                + OpenAI cascade assigns GPT-5.6 Terra/Luna
     |
     +---> minutes/hours, critical -> 9-model pool + all supervisors + overseers
                                      + ALL cascades active

@@ -59,7 +59,7 @@ last-modified: 2026-06-06
 
 ### Research & Intelligence
 - [[Universal Research Mandate]] — All 8 models research independently
-- [[Research Vote Weights]] — Opus 25%, GPT-5.5 25%, V4-Pro 20%
+- [[Research Vote Weights]] — Opus 25%, GPT-5.6 Terra 25%, V4-Pro 20%
 - [[Research Output Format]] — Standardized brief template
 - [[Research Cost Model]] — $3.90 critical / $1.50 standard per module
 

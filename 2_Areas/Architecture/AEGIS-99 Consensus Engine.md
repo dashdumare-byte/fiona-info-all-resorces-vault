@@ -16,7 +16,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 1
 | Role | Model | String / Endpoint | Weight |
 |------|-------|-------------------|--------|
 | Architect Primary | Nemotron 3 Ultra 550B | `nvidia/nemotron-3-ultra-550b` | 20% |
-| Architect Co-Primary | GPT-5.5 | `openai/gpt-5.5` | 15% |
+| Architect Co-Primary | GPT-5.6 Terra | `openai/gpt-5.6-terra` | 15% |
 | Architect Co-Primary | DeepSeek V4-Pro | `deepseek-v4-pro` | 15% |
 | Auditor 1 | MiniMax M3 | `minimax/minimax-m3` | 15% |
 | Auditor 2 | Qwen3.7-Max-Preview | `qwen3.7-max-preview` | 10% |
@@ -64,7 +64,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 1
 | Model | Research Weight | Reason |
 |-------|----------------|--------|
 | Claude Opus 4.8 | 25% | Visual/debugging research |
-| GPT-5.5 | 25% | Adversarial depth |
+| GPT-5.6 Terra | 25% | Adversarial depth |
 | DeepSeek V4-Pro | 20% | Code pattern depth |
 | **GLM-5.2** | 15% | **Coding accuracy (lead)** |
 | GLM-5.1 | 5% | Coding accuracy (fallback) |
@@ -99,7 +99,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 1
 ## Model-Specific Notes
 
 - **Nemotron 3 Ultra 550B**: #1 US open-weight (Intelligence Index 48). 550B/55B active MoE. 300+ t/s. FREE on NIM. 1M context. Open weights on Hugging Face. Launched June 4, 2026. Replaces Nemotron 3 Super.
-- **GPT-5.5**: OpenAI flagship, confirmed live on OpenRouter. Adversarial specialist.
+- **GPT-5.6 Terra**: OpenAI flagship, confirmed live on OpenRouter. Adversarial specialist.
 - **DeepSeek V4-Pro**: 93.5% LiveCodeBench, 1.6T params, 1M context.
 - **MiniMax M3**: Multimodal specialist (native image+video). MSA architecture. 1M context. 9x prefill/15x decode. Open-source weights June 1, 2026. Upgraded from M2.7 June 2026.
 - **Qwen3.7-Max-Preview**: Web/UI specialist. Upgraded from 3.6 May 2026.

@@ -8,7 +8,7 @@
 ### TIER 1: FIONA Core Pool (Currently Locked)
 | Model | Params | Context | Date | Architecture |
 |-------|--------|---------|------|--------------|
-| GPT-5.5 | ~1.5T | 1.05M | Apr 2026 | Dense, CoT reasoning |
+| GPT-5.6 Terra | ~1.5T | 1.05M | Apr 2026 | Dense, CoT reasoning |
 | Claude Opus 4.8 | ~1.5T | 1M | May 2026 | Dense, visual+text |
 | Claude Opus 4.7 | ~1.5T | 1M | Apr 2026 | Dense, async agents |
 | Claude Opus 4.6 | ~1.5T | 1M | Feb 2026 | Dense, coding leader |
@@ -131,7 +131,7 @@
 
 ## KEY ARCHITECTURE PATTERNS
 - MoE (Mixture of Experts): DeepSeek, GLM, Kimi, Nemotron, MiniMax
-- Dense: GPT-5.5, Claude Opus, Grok, Gemma 4 (some)
+- Dense: GPT-5.6 Terra, Claude Opus, Grok, Gemma 4 (some)
 - Hybrid Attention: Nemotron 3 Ultra (Mamba+Attention)
 - Linear Attention: Kimi Linear, GLM-4.7+
 - Self-Scaffolding: Ornith 1.0 (unique)

@@ -142,7 +142,7 @@ source: FIONA_v1.7_CRITICAL_MODULES_LOCKED(1).txt
 | **Pool** | 9-model critical |
 | **AEGIS** | >=0.90 |
 | **Build Day** | Day 10 (DEDICATED FULL DAY) |
-| **Supervisor** | Codex (GPT-5.5) for web security |
+| **Supervisor** | Codex (GPT-5.6 Terra) for web security |
 
 ---
 
