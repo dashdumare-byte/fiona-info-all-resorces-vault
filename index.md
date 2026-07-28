@@ -68,6 +68,7 @@ last-modified: 2026-07-28
 - [[Inner Virus Framework]] — 6-tier classification + 4-step response
 - [[Security Stack]] — Snyk, Semgrep, Trivy, garak, Sentry, Giskard, etc.
 - [[Cursor Hard Gate]] — 12 mandatory checks at Step 8
+- [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]] — Continuous auto-fix, sandbox-per-model
 - [[Honest Assessment]] — Brutal reality check, probability of success
 
 ### Operations

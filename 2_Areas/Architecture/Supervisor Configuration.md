@@ -31,9 +31,10 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 4
 
 ### When Activated
 - All coding tasks (automatic)
-- Critical tasks (Opus 4.8 forced)
+- Critical tasks (Opus 5 forced)
 - Standard tasks (Opus 4.8 auto-selected)
-- Repetitive tasks (Sonnet auto-selected)
+- Repetitive tasks (Sonnet 4.8 auto-selected)
+- Trap door auto-fixes (all 3 supervisors + Cursor Composer participate — see [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]])
 
 ---
 

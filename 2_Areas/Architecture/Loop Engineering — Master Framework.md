@@ -358,8 +358,10 @@ But for FIONA — 69 modules, automated verification, $2,005 in free credits, sa
 ---
 
 ## Related Files
+- [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]] — FIONA's implementation: referee loop + sandbox-per-model
 - [[Mega Cycle System Integration]] — 21 feedback memories, 6-rung depth ladder
 - [[PULSE Token Efficiency Protocol]] — 10 Commandments for affordable loops
 - [[AEGIS-99 Consensus Engine]] — The gate
 - [[Supervisor Configuration]] — 3 supervisors = built-in maker-checker
+- [[Overseer Configuration]] — 2 overseers detect failures → trigger trap door
 - [[F-GARP - Deadlock Recovery]] — Recovery loop for when things break

@@ -93,6 +93,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 1
 - **Tier 2 Review**: AEGIS-99 re-reviews all day's work every 20 hours
 - **Runtime**: AEGIS-99 mandatory on all critical task outputs
 - **Cursor Hard Gate**: Zero tests + zero lint + AEGIS PASS required
+- **Cursor Trap Door**: If AEGIS FAIL → Cursor Composer auto-fix loop activates in sandbox (see [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]])
 
 ---
 

@@ -40,6 +40,9 @@ Step 7: 3-SUPERVISOR REVIEW
 Step 8: CURSOR HARD GATE (12 checks)
     |
     v
+TRAP DOOR ACTIVATION (if failures detected — see [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]])
+    |
+    v
 SHIP / FAIL
 ```
 

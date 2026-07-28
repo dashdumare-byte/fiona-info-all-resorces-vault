@@ -22,7 +22,7 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 5
 2. Execute health checks
 3. Run tests on code changes
 4. Flag errors and anomalies
-5. Attempt auto-fixes for known patterns
+5. Attempt auto-fixes for known patterns (via [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture|Cursor trap door]] — all models in sandboxes)
 6. Escalate on 5th failure to Ashandy
 7. Log all activity to shared JSONL
 8. Report status every 30 minutes

@@ -63,6 +63,7 @@ Every fix must explicitly declare its depth:
 | 3 | **Must-ship** — Every cycle must produce a deliverable or explicit failure | Pre-commit gate: code or documented reason |
 | 4 | **Self-evolve** — Agent improves its own process each cycle | Weekly `/evolve` run, updates this document |
 | 5 | **Action law** — Every action must have observable consequence | All module outputs must be testable/verifiable |
+| 5b | **Trap door** — Continuous auto-fix loop: detect → sandbox fix → verify → deliver | [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]]: overseers detect, all models fix in sandboxes, referee loop enforces |
 
 ### Category 2: Diagnosis Discipline (3 memories)
 
@@ -193,3 +194,13 @@ The 21 feedback memories become part of FIONA's **L2 Context Memory**:
 3. **6-rung ladder is mandatory** — every fix must declare its rung. No undeclared surface fixes.
 4. **60s cycle is minimum** — not maximum. Complex tasks can take multiple cycles.
 5. **Pressure gates protect Lightning.ai** — RAM >90% means defer, not crash.
+
+---
+
+## Related Files
+- [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]] — Trap door = Memory #5b (continuous auto-fix)
+- [[Loop Engineering — Master Framework]] — 6 building blocks that power the Mega Cycle
+- [[F-GARP - Deadlock Recovery]] — Complements Mega Cycle (handles deadlocks vs drift)
+- [[PULSE Token Efficiency Protocol]] — Makes 60s cycles affordable
+- [[AEGIS-99 Consensus Engine]] — The gate that validates every cycle's output
+- [[Overseer Configuration]] — Pi + Goose execute the 60s wakeup cadence

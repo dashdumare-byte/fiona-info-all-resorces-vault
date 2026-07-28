@@ -69,6 +69,10 @@ M1 UTM | M11 Orchestrator | AEGIS-99 Engine | Security | Memory Manager | DCC Ba
 ### Budget
 Build: $300 (30 days, $10/day) | 3-Tier: L1$0 L2$50 L3$100 | Runtime: $200-250/month
 
+### Continuous Auto-Fix (Trap Door)
+Overseers detect failures → Cursor Composer 2.5 + all 3 supervisors fix in sandboxes → referee loop → AEGIS-99 validates → deliver clean code
+See: [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]]
+
 ### Timeline
 Days 1-3: Infrastructure | Days 4-7: DCC adapters | Day 8: Integration | Day 9: B4D Grillz | Day 10: Web App | Days 11-14: Standard modules | Days 15-16: Integration + deploy
 

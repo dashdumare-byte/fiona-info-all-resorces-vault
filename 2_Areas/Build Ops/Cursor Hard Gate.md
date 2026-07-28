@@ -83,4 +83,4 @@ Iterate on Lints: ON
 
 ---
 
-*See also: [[Build Flow]], [[30-Day Build Timeline]], [[Security Stack]]*
+*See also: [[Build Flow]], [[30-Day Build Timeline]], [[Security Stack]], [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]]*
