@@ -123,7 +123,7 @@ The following research tools and their roles remain current:
 | **Semantic Scholar** | Academic paper search | Via API |
 | **Markdownify** | Convert web content to markdown | Via API |
 | **E2B** | Code execution sandbox | `npx -y @e2b/mcp-` |
-| **Consensus** | Research paper summary/verification | MCP available |
+| **Consensus** | Research paper summary/verification | MCP available (lazy-loaded via [[Tool Integration — Code Mode Architecture|Code Mode]]) |
 
 **Note:** These tools are also documented in [[Universal Research Mandate]] and [[Research Vote Weights]].
 

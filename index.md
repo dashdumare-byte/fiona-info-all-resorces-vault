@@ -38,6 +38,7 @@ last-modified: 2026-07-28
 
 ### Architecture
 - [[AEGIS-99 Consensus Engine]] — Weights, thresholds, scoring
+- [[Tool Integration — Code Mode Architecture]] — Lazy-loaded MCP tools (98.7% token reduction)
 - [[Model Roster]] — All 20+ models, strings, roles, routing
 - [[Smart Routing]] — Claude + OpenAI + OpenCode cascades
 - [[Supervisor Configuration]] — 3 supervisors with smart routing

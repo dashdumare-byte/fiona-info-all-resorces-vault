@@ -172,7 +172,7 @@ The 10 Commandments are injected into every model's system prompt:
 6. Context budget: 15/10/5/60/10 enforced.
 7. Consolidate redundant files.
 8. Config-driven, not hardcoded.
-9. Lazy loading only.
+9. Lazy loading only. See [[Tool Integration — Code Mode Architecture]] — 98.7% token reduction via lazy tool loading.
 10. Target read:output ratio <2.0.
 ```
 

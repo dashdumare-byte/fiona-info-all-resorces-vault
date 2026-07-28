@@ -326,6 +326,7 @@ Send same prompt to multiple models simultaneously — **this is AEGIS-99 built 
 
 ## Related Files
 - [[Loop Engineering — Master Framework]] — The 6 building blocks the trap door implements
+- [[Tool Integration — Code Mode Architecture]] — Cursor uses Code Mode natively for lazy tool loading
 - [[Supervisor Configuration]] — 3 supervisors that participate in trap door
 - [[Overseer Configuration]] — 2 overseers that detect failures
 - [[AEGIS-99 Consensus Engine]] — Quality gate for all Cursor fixes

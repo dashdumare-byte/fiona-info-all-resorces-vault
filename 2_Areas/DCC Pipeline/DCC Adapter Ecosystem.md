@@ -119,4 +119,4 @@ Kimi Agent mode + DeepResearcher (30min before each adapter):
 
 ---
 
-*See also: [[Critical Modules]], [[30-Day Build Timeline]], [[Cursor Hard Gate]]*
+*See also: [[Critical Modules]], [[30-Day Build Timeline]], [[Cursor Hard Gate]], [[Tool Integration — Code Mode Architecture]] — 7 custom DCC MCP servers use lazy-loading (98.7% token reduction)*
