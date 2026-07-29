@@ -13,6 +13,13 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt + FIONA_v1.7_MERGE_BUILD_PLAN(1).txt
 ## Visual Pipeline
 
 ```
+PRE-STEP: SESSION START PROTOCOL (MANDATORY — see [[Session Start Protocol]])
+    |
+    |-- 0a. GitNexus: what changed since last session
+    |-- 0b. Blast radius check
+    |-- 0c. Load supervisor primer + read MEMORY.md
+    |
+    v
 Step 0: UNIVERSAL RESEARCH
     |
     v

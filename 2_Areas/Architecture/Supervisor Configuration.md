@@ -44,6 +44,38 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 4
 | Block-production-files | PreToolUse | Prevents accidental overwrites of production files |
 | Git commit | Post-successful-build | Auto-commits with AEGIS-99 score in message |
 
+### CLAUDE.md Required Additions (GitNexus Integration)
+
+These MUST be present in CLAUDE.md for every build session:
+
+**Graph Indexes (MCP-backed):**
+```markdown
+## Graph Indexes
+- Full dependency graph: `.gitnexus/` (LadybugDB via MCP)
+- Structural code map: `.code-review-graph/` (SQLite via MCP)
+- Re-index interval: Every 15 minutes during active development
+```
+
+**Change Safety Rules:**
+```markdown
+## Change Safety Rules
+- BEFORE any code change: Check blast radius via `npx gitnexus blast-radius --files "[path]"`
+- NEVER modify a function without checking its dependents first
+- If dependency chain is 3+ levels deep: Use plan mode first (document strategy)
+- If dependency chain is 5+ levels deep: Escalate to Ashandy
+- Prefer `codegraph_explore` or graph MCP tools over `grep` for navigation
+```
+
+**Session Start Checklist:**
+```markdown
+## Session Start (MANDATORY)
+- [ ] Run: `npx gitnexus query "what changed since last session"`
+- [ ] Check blast radius of planned changes
+- [ ] Load `primers/primer_claude.md`
+- [ ] Read `MEMORY.md` current state
+- [ ] Begin work with full context
+```
+
 ### When Activated
 - All coding tasks (automatic)
 - Critical tasks (Opus 5 forced)

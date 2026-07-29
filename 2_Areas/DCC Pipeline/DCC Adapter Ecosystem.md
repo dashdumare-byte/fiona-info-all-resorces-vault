@@ -25,6 +25,25 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt + DCC Adapters chat (LEBROV & G) analys
 
 ---
 
+## 8 Pre-Seeded Known Issues (Prevent These Failures)
+
+These are documented failure modes from prior DCC adapter builds. Each adapter build MUST account for these:
+
+| # | DCC | Known Issue | Fix / Workaround | Verification |
+|---|-----|-------------|-------------------|--------------|
+| 1 | **DaVinci Resolve 21** | GUI dependency — Resolve refuses to launch without display server | Use **davinci-rest REST shim** (headless API server). Never launch full Resolve in container. | REST ping test |
+| 2 | **Houdini 21** | hou module only available inside hython interpreter, NOT standard Python | Always use **`hython`** (not `python`) to run Houdini scripts. `hou` is not pip-installable. | `hython -c "import hou; print(hou.__version__)"` |
+| 3 | **Nuke 17** | Breaking API changes from 16.x — node creation syntax changed | Check API version at runtime: `nuke.NUKE_VERSION_MAJOR`. Use version-gated code paths. | Context7 validation |
+| 4 | **Cinema 4D 2026.3.2** | Tencent Cloud auth requirement blocks headless operation in some regions | Use **HuggingFace fallback** for C4D Python SDK download. Pre-download SDK before container build. | SDK import test |
+| 5 | **Unreal Engine 5.8** | `EditorLevelLibrary` is deprecated in 5.7+ — scripts using it will fail | Use **`EditorActorSubsystem`** (new API). Search/replace all `EditorLevelLibrary` refs before build. | Actor list retrieval test |
+| 6 | **Blender 5.2.0** | Headless mode **REQUIRES** `--background` flag — silently hangs without it | Always include `--background` in launch command: `blender --background --python script.py` | Render test cube |
+| 7 | **ComfyUI, DaVinci, Houdini, C4D** | These 4 DCCs need **custom MCP servers built from scratch** (no existing MCP) | Budget 2-3 days per custom MCP. Use TypeScript with typed contracts. Test headless before integration. | MCP server health check |
+| 8 | **ComfyUI** | Default video generation is slow — need optimized model | Use **LTX Video Fast** as primary video generation model. Configure in ComfyUI workflow JSON. | Video generation speed test |
+
+**All 8 issues must be verified passing before the DCC adapter is considered complete.**
+
+---
+
 ## Batch Build Order
 
 ### Batch A (Days 4-5) — Rate: 2/day

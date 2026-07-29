@@ -162,6 +162,27 @@ date-created: 2026-07-22
 
 ---
 
+### 17. Plurai (Evals & Guardrails)
+**What:** SLM-based evaluation and guardrails platform. Validates AI outputs at 15x lower cost than LLM-as-judge, <100ms latency.
+**Tool:** Plurai (plurai.com) — $0.15/1K tokens, 1M tokens FREE on signup, $30 = 200K tokens
+**FIONA Use:** 
+- Build: AEGIS-99 enforcement at scale without breaking budget
+- Runtime: Real-time guardrails (<100ms), tool invocation validation, policy compliance, grounding validation (prevents hallucination)
+**Status:** **Track.** High value for runtime. Activate post-build for client-facing output validation.
+
+---
+
+### 18. Lemur (Neural Architecture Search)
+**What:** Google's AutoML tool for neural architecture search. Discovers optimal model architectures for specific tasks.
+**Tool:** Lemur (Google) — pricing varies by compute
+**FIONA Use:**
+- Runtime: Optimize model selection per task type (which model for which module)
+- Runtime: Auto-tune DCC adapter parameters for performance
+- Build: LOW value (not needed for initial build)
+**Status:** **Track.** Evaluate for runtime optimization post-build.
+
+---
+
 ## REFERENCE ONLY (In OV for Future Use)
 
 ### 17. MLM (Masked Language Models)
@@ -207,10 +228,10 @@ date-created: 2026-07-22
 | Category | Count | Status | Monthly Cost |
 |----------|-------|--------|-------------|
 | Active (integrated) | 11 types | In use | ~$12.50 new |
-| Tracked | 5 types | In OV, activate when needed | Pay-per-use |
+| Tracked | 7 types | In OV, activate when needed | Pay-per-use |
 | Reference only | 4 types | In OV for future research | $0 |
 | Tracked (Beta) | **Agent Swarm** | Kimi Agent mode with up to 100 sub-agents for parallel tasks. Evaluate for runtime business intelligence (batch market analysis, competitor research, parallel concept generation). NOT for build phase. | $0 (Beta) |
-| **Total** | **21 types** | | **~$12.50/mo** |
+| **Total** | **23 types** | | **~$12.50/mo** |
 
 ---
 
@@ -223,4 +244,8 @@ date-created: 2026-07-22
 | 2026-07-22 | Step Audio EditX added as primary TTS (Apache 2.0) |
 | 2026-07-22 | Orpheus 3B added for expressive TTS |
 | 2026-07-22 | Qwen3.5-9B replaces Gemma 4 26B for L1 coding |
+| 2026-07-28 | **Plurai added** (Tracked #17) — SLM evals/guardrails, $0.15/1K tokens, <100ms |
+| 2026-07-28 | **Lemur added** (Tracked #18) — Neural Architecture Search, Google AutoML |
+| 2026-07-28 | Agent Swarm moved to Tracked (Beta) |
+| 2026-07-28 | Total: 23 types (was 21)
 | 2026-07-22 | Oxylabs AI Studio confirmed over Firecrawl |

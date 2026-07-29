@@ -6,7 +6,7 @@ source: SENTRY & SNYK analysis + FIONA_SECURITY_STACK_COMPLETE_LOCKIN.md
 
 # Security Stack
 
-> **32 tools (NVIDIA OpenShell added as execution sandbox) across build + runtime. Zero-tolerance security posture.**
+> **34 tools (Plurai added as SLM guardrails layer) across build + runtime. Zero-tolerance security posture.**
 > Expanded from basic Snyk+Sentry to full 31-tool stack during Layer 2 analysis.
 
 ---
@@ -68,6 +68,7 @@ source: SENTRY & SNYK analysis + FIONA_SECURITY_STACK_COMPLETE_LOCKIN.md
 | **Evidently AI** | ML model drift + quality monitoring | Free (open-source) |
 | **AEGIS-99** | Multi-model consensus gate (custom) | API costs |
 | **FacTool** | 5-step factual verification pipeline — validates code, math, QA claims against sources | Free (open-source) |
+| **Plurai** | SLM-based evals & guardrails — real-time validation, policy compliance, grounding check. 15x cheaper than LLM-as-judge, <100ms | $0.15/1K tokens (1M free on signup) |
 
 ### Prompt Security
 | Tool | Purpose | Cost |
@@ -152,4 +153,4 @@ Classify severity (auto + supervisor)
 
 ---
 
-*Total: 33 tools (FacTool added as factual verification pipeline) | Build: 16 | Runtime: 16 | Zero additional cost (all free tier/self-hosted)*
+*Total: 34 tools (FacTool + Plurai added) | Build: 16 | Runtime: 17 | ~$0.15/1K tokens for Plurai (1M free on signup)*
