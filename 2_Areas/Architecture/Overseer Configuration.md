@@ -27,6 +27,22 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 5
 7. Log all activity to shared JSONL
 8. Report status every 30 minutes
 
+### OpenClaw Cron Automation (Build Phase)
+```bash
+openclaw cron add --cron "0 8 * * *" --message \
+  "Read MEMORY.md, identify next unbuilt module, run Nemotron deep research pass, write to memory/YYYY-MM-DD.md"
+```
+
+**What OpenClaw does:**
+- Daily 8AM: Reads current build state from MEMORY.md
+- Identifies next module in dependency order
+- Triggers Nemotron 3 Ultra 550B research pass
+- Stores results in dated memory files
+- Signals Orchestrator when research is complete
+
+**Status:** Active during build phase (Days 1-30). Disabled post-build.
+**See also:** [[Cron Automation — Build & Runtime Schedules]]
+
 ---
 
 ## Task-Level Monitoring

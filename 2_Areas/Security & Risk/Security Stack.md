@@ -67,6 +67,7 @@ source: SENTRY & SNYK analysis + FIONA_SECURITY_STACK_COMPLETE_LOCKIN.md
 | **NeMo Guardrails** | LLM output validation, topic control | Free (NVIDIA) |
 | **Evidently AI** | ML model drift + quality monitoring | Free (open-source) |
 | **AEGIS-99** | Multi-model consensus gate (custom) | API costs |
+| **FacTool** | 5-step factual verification pipeline — validates code, math, QA claims against sources | Free (open-source) |
 
 ### Prompt Security
 | Tool | Purpose | Cost |
@@ -145,10 +146,10 @@ Classify severity (auto + supervisor)
 
 1. **No secrets in code**: TruffleHog + git-secrets block all commits with secrets
 2. **No unvetted dependencies**: Snyk + Safety scan before any `pip install`
-3. **No unvalidated AI output**: AEGIS-99 + NeMo Guardrails on all outputs
+3. **No unvalidated AI output**: AEGIS-99 + NeMo Guardrails + FacTool 5-step verification on all outputs
 4. **No ignored security alerts**: ALL alerts must be acknowledged or dismissed with reason
 5. **Build fails on security**: Cursor Hard Gate includes security scan; fail = no merge
 
 ---
 
-*Total: 32 tools (NVIDIA OpenShell added as execution sandbox) | Build: 16 | Runtime: 15 | Zero additional cost (all free tier/self-hosted)*
+*Total: 33 tools (FacTool added as factual verification pipeline) | Build: 16 | Runtime: 16 | Zero additional cost (all free tier/self-hosted)*

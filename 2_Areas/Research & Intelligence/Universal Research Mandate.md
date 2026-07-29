@@ -16,7 +16,46 @@ source: FIONA_v1.7_UNIVERSAL_RESEARCH_MANDATE(1).txt
 
 **Risks**: Hallucinated research briefs propagated to all models. Zero cross-verification. Single points of failure.
 
-**After**: All 8 models research independently, cross-verify, FacTool verifies, AEGIS-99 scores research quality.
+**After**: All 8 models research independently, cross-verify, FacTool verifies (5-step factual verification pipeline), AEGIS-99 scores research quality.
+
+## 9-Step Information Retrieval (Mandatory Research Protocol)
+
+Every research task MUST follow this sequence:
+
+```
+Step 1: Define research question and scope
+Step 2: Source identification (web, academic, code repos, docs)
+Step 3: Parallel search across all 8 models
+Step 4: Initial synthesis (each model independently)
+Step 5: Cross-verification (models compare findings)
+Step 6: FacTool verification (factual claims checked)
+Step 7: Confidence scoring (AEGIS-99 Research Consensus)
+Step 8: Brief compilation (structured output)
+Step 9: Storage (memory/YYYY-MM-DD.md + Chroma embeddings)
+```
+
+**Step 9 output format:**
+```markdown
+# Research Brief — YYYY-MM-DD — [Module/Topic]
+
+## Question
+[Original research question]
+
+## Findings
+[Structured findings with confidence scores]
+
+## Sources
+[All sources with URLs/access dates]
+
+## FacTool Verification
+[Verified claims + any flagged items]
+
+## AEGIS Score
+[Consensus score]
+
+## Next Steps
+[Recommended actions]
+```
 
 ---
 
@@ -104,6 +143,26 @@ Every model MUST produce:
 - 50 standard x $1.50 = $75
 - 19 critical x $3.90 = $74
 - **Total: ~$149 (within $250-300 budget)**
+
+---
+
+## Daily Research Automation (Nemotron 8AM Cron)
+
+```cron
+0 8 * * * /fiona/scripts/nemotron-research.sh
+```
+
+**What happens:**
+1. Nemotron 3 Ultra 550B (L1 free via NIM) reads MEMORY.md
+2. Scans `memory/modules/` for build progress
+3. Identifies next unbuilt module in dependency order
+4. Runs deep research pass (30-60 min)
+5. Writes structured brief to `memory/YYYY-MM-DD.md`
+6. Signals Orchestrator: "Research complete for Module X"
+
+**Cost:** ~$0/day (Nemotron L1 free)
+**Output:** Pre-loaded research briefs before work begins
+**Status:** Active during build phase (Days 1-30)
 
 ---
 

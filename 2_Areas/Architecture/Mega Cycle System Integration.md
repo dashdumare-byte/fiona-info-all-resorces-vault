@@ -123,6 +123,26 @@ Every 60 seconds:
 7. Repeat
 ```
 
+### 1b. Nemotron 8AM Research Cron (Build Phase)
+
+```
+Daily at 8:00 AM:
+1. Nemotron 3 Ultra 550B reads MEMORY.md current state
+2. Scans memory/modules/ for build progress
+3. Identifies next unbuilt module in dependency order
+4. Runs deep research pass on that module:
+   - Library versions, API changes, breaking changes
+   - Similar implementations in FIONA's existing modules
+   - Security considerations
+   - DCC integration requirements (if applicable)
+5. Writes research brief to memory/YYYY-MM-DD.md
+6. Signals Orchestrator: "Research complete for Module X"
+```
+
+**Trigger:** Cron (`0 8 * * *`) during build phase (Days 1-30)
+**Cost:** ~$0.50/day (Nemotron L1 free via NIM credits)
+**Output:** Daily research briefs pre-loaded before work begins
+
 ### 2. Pre-Commit Quality Gate (`/depth-check`)
 
 Before any module commit:

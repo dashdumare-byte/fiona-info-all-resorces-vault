@@ -36,10 +36,11 @@ Violating any commandment triggers Module 64 (Self-Diagnostics) flag.
 | 3 | **Structured over prose** | Use tables, JSON, bullet points. Avoid paragraphs when data is structured. | Format enforced |
 | 4 | **Grep over cat** | Search for specific lines (`grep`, `sed`) instead of reading entire files. | Re-read flagged |
 | 5 | **Never re-read** | Cache file contents after first read. Read once per session. | Re-read flagged |
-| 6 | **Context window budget** | 15% system, 10% memory, 5% agents, 60% work, 10% buffer. Enforced by Orchestrator. | Overflow prevented |
+| 6 | **Context window budget** | 15% system, 10% memory, 5% agents, 60% work, 10% buffer. Enforced by Orchestrator + ModelContextWindowGuard (monitors and enforces context window limits per model). | Overflow prevented |
 | 7 | **Consolidate files** | When 3+ files share 50%+ code, merge into single file with config-driven variants. | Redundancy flagged |
 | 8 | **Config-driven** | Use configuration files (JSON/YAML) instead of hardcoded values. | Hardcode flagged |
-| 9 | **Lazy loading** | Only load modules when actually needed. No pre-loading entire system. | Waste flagged |
+| 9 | **Lazy loading** | Only load modules when actually needed. No pre-loading entire system. See [[Tool Integration — Code Mode Architecture]] — 98.7% reduction via lazy MCP loading. | Waste flagged |
+| 9b | **Prompt caching** | Use PromptCachePrefixBuilder for repeated prompts — **64% cost reduction** on cached prefixes. Cache common system prompts, DCC adapter templates, research briefs. | Cache miss flagged |
 | 10 | **Measure weekly** | Track `read_to_output_ratio`. Target <2.0. Weekly audit in Module 64. | Accountability |
 
 ---

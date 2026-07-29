@@ -209,7 +209,7 @@ date-created: 2026-07-22
 | Active (integrated) | 11 types | In use | ~$12.50 new |
 | Tracked | 5 types | In OV, activate when needed | Pay-per-use |
 | Reference only | 4 types | In OV for future research | $0 |
-| Skipped | 1 type | Not relevant | $0 |
+| Tracked (Beta) | **Agent Swarm** | Kimi Agent mode with up to 100 sub-agents for parallel tasks. Evaluate for runtime business intelligence (batch market analysis, competitor research, parallel concept generation). NOT for build phase. | $0 (Beta) |
 | **Total** | **21 types** | | **~$12.50/mo** |
 
 ---

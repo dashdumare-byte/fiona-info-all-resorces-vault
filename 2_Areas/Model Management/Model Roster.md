@@ -300,3 +300,5 @@ All 22+ models vote. AEGIS-99 >=0.95 required. GPT-5.6 Sol Ultra coordinates 4 p
 | 2026-07-22 | Ornith-35B, Tencent Hy3, Poolside Laguna XS 2.1, Gemma 4 added to L1 |
 | 2026-07-22 | Grok 4.5 added to L2 Standard |
 | 2026-07-22 | Kimi K2.7 upgraded from K2.6 |
+| 2026-07-28 | ModelContextWindowGuard added — monitors/enforces per-model context limits |
+| 2026-07-28 | PromptCachePrefixBuilder added — 64% cost reduction on cached prefixes |

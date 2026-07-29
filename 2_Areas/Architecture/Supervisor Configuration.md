@@ -29,6 +29,21 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 4
 - DCC gate validation
 - Visual design review
 
+### Claude Code Subagents (Item 6 — 4 specialized subagents)
+| Subagent | Role | Trigger |
+|----------|------|---------|
+| `dcc-researcher` | Researches DCC APIs before adapter generation | DCC adapter build |
+| `security-reviewer` | Security review on each completed module | Post-module build |
+| `code-reviewer` | Code quality review | Post-AEGIS consensus |
+| `aegis-auditor` | Dedicated AEGIS-99 auditing subagent | AEGIS score < 0.90 |
+
+### Claude Code Hooks (Item 7 — 3 event-driven hooks)
+| Hook | Event | Action |
+|------|-------|--------|
+| Auto-format | Every file write | Runs formatter before save |
+| Block-production-files | PreToolUse | Prevents accidental overwrites of production files |
+| Git commit | Post-successful-build | Auto-commits with AEGIS-99 score in message |
+
 ### When Activated
 - All coding tasks (automatic)
 - Critical tasks (Opus 5 forced)
