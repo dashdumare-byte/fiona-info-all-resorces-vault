@@ -183,6 +183,29 @@ date-created: 2026-07-22
 
 ---
 
+### 19. FlashKDA (CUDA Kernels for Kimi)
+**What:** MIT-licensed CUDA kernels for Kimi Delta Attention. 1.72-2.22× prefill speedups on compatible hardware.
+**Tool:** FlashKDA — open source, MIT license
+**FIONA Use:**
+- Runtime: Accelerate Kimi K2.7 inference for long-context creative generation
+- Runtime: Speed up neural rendering and generative AI pipelines
+- Build: NONE — runtime only
+**Status:** **Track.** Activate if Kimi K2.7 inference speed becomes bottleneck.
+
+---
+
+### 20. Alibaba Metis / HDPO (RL Framework)
+**What:** Apache 2.0 RL framework that decouples accuracy and efficiency rewards. Cuts redundant tool calls from 98% to 2%.
+**Tool:** Metis/HDPO — Apache 2.0, free
+**FIONA Use:**
+- Runtime: Train overseers/supervisors to route cheap vs expensive models optimally
+- Runtime: Reduce API costs 50-80% while maintaining accuracy
+- Runtime: Metacognitive training (agents know when they need external tools)
+- Build: Train supervisor routing policies during build
+**Status:** **Track.** High value for runtime cost optimization. Activate post-build.
+
+---
+
 ## REFERENCE ONLY (In OV for Future Use)
 
 ### 17. MLM (Masked Language Models)
@@ -228,10 +251,10 @@ date-created: 2026-07-22
 | Category | Count | Status | Monthly Cost |
 |----------|-------|--------|-------------|
 | Active (integrated) | 11 types | In use | ~$12.50 new |
-| Tracked | 7 types | In OV, activate when needed | Pay-per-use |
+| Tracked | 10 types | In OV, activate when needed | Pay-per-use |
 | Reference only | 4 types | In OV for future research | $0 |
 | Tracked (Beta) | **Agent Swarm** | Kimi Agent mode with up to 100 sub-agents for parallel tasks. Evaluate for runtime business intelligence (batch market analysis, competitor research, parallel concept generation). NOT for build phase. | $0 (Beta) |
-| **Total** | **23 types** | | **~$12.50/mo** |
+| **Total** | **26 types** | | **~$12.50/mo** |
 
 ---
 
@@ -247,5 +270,8 @@ date-created: 2026-07-22
 | 2026-07-28 | **Plurai added** (Tracked #17) — SLM evals/guardrails, $0.15/1K tokens, <100ms |
 | 2026-07-28 | **Lemur added** (Tracked #18) — Neural Architecture Search, Google AutoML |
 | 2026-07-28 | Agent Swarm moved to Tracked (Beta) |
-| 2026-07-28 | Total: 23 types (was 21)
+| 2026-07-28 | Total: 23 types (was 21) |
+| 2026-07-28 | **FlashKDA added** (Tracked #19) — CUDA kernels for Kimi, 1.72-2.22× speedup |
+| 2026-07-28 | **Alibaba Metis/HDPO added** (Tracked #20) — RL framework, 50-80% API cost reduction |
+| 2026-07-28 | Total: 26 types |
 | 2026-07-22 | Oxylabs AI Studio confirmed over Firecrawl |

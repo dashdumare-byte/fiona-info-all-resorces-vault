@@ -135,6 +135,33 @@ These MUST be present in CLAUDE.md for every build session:
 
 ---
 
+### Supervisor Model Routing Optimization (Alibaba Metis / HDPO)
+
+**Apache 2.0 RL framework** for training overseers to route tasks to optimal models.
+
+| Metric | Before Metis | After Metis |
+|--------|-------------|-------------|
+| Redundant tool calls | 98% | 2% |
+| API cost reduction | — | 50-80% |
+| Accuracy maintained | Baseline | Same or better |
+
+**What Metis trains:**
+- **Accuracy rewards:** Task completed correctly
+- **Efficiency rewards:** Used cheapest viable model (not most expensive)
+- **Metacognitive training:** Agents learn when they NEED external tools vs can solve internally
+
+**Implementation:**
+```
+Phase: Post-build (Week 2+)
+Input: AEGIS-99 logs, model usage data, cost data, accuracy scores
+Output: Optimal routing policy per task type
+Training: RL loop — route → evaluate cost+accuracy → update policy
+```
+
+**Status:** Track. High value for runtime cost optimization. Activate post-build.
+
+---
+
 ## Supervisor Review Flow
 
 ```
