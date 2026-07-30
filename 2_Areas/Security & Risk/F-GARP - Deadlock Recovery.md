@@ -111,6 +111,35 @@ Attempt 8+: Build PAUSE + architectural review
 
 ---
 
+## Underlying Technologies (from Deep Architectural Research)
+
+### LLMDR — LLM-Driven Deadlock Detection and Resolution
+- **Source:** https://github.com/ssbacc/llmdr-dhc
+- **Role:** The "brain" of deadlock detection in F-GARP Steps 3-4
+- **How it works:** Dual-phase approach — detection window analyzes reasoning logs for "wandering" states (agents repeating same reasoning without progress), then LLM-suggested strategies assign priorities to clear the deadlock
+- **Why FIONA uses it:** Classifies deadlocks based on behavioral patterns (semantic stalls) rather than just network-level stalls. FIONA deadlocks are almost always semantic — agents stuck on ambiguous specs or impossible constraints
+
+### PIBT — Priority Inheritance with Backtracking
+- **Source:** arxiv:2205.12504
+- **Role:** The "muscle" of deadlock resolution in F-GARP Steps 4-5
+- **How it works:** Priority-based communication where agents decide next states in descending priority order. Higher-priority agents can displace lower-priority ones. Adapted for FIONA's "dead-end" reasoning paths
+- **Why FIONA uses it:** Ensures if a council member is identified as the bottleneck, it's temporarily elevated in the supervisor's execution queue to clear required outputs
+
+### Semantic Delta Monitor (Custom FIONA Component)
+- **Role:** Early warning system that triggers F-GARP BEFORE full deadlock
+- **How it works:** Tracks semantic embedding of shared state at each timestep. If state changes by less than a threshold for N consecutive turns → triggers LLMDR detection
+- **Why it matters:** Catches deadlocks in Step 1-2 instead of waiting until Step 4-5
+
+### Priority Manager (Custom FIONA Component)
+- **Role:** Translates LLMDR output to FIONA's execution queue
+- **How it works:** Receives deadlock classification from LLMDR → applies PIBT priority inheritance → reorders supervisor task queue → clears bottleneck
+
+**Discarded approaches:**
+- MARL for Deadlock Handling — discarded due to high training overhead and black-box policies
+- Distributed Black-Box Monitors — better suited for microservice network deadlocks, not reasoning cycles
+
+---
+
 ## Key Principles
 
 1. **Graduated cost**: Early steps are cheap; later steps escalate in cost and authority

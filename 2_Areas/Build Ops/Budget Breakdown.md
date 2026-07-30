@@ -74,6 +74,13 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 14
 | All security tools | Snyk, Semgrep, Trivy, garak, etc. — FREE tier |
 | Langfuse | Open-source tracing — FREE (self-hosted) |
 | FacTool, DeepResearcher | Research verification — FREE |
+| Lean 4 | Theorem prover — FREE (open source) |
+| Leanstral | Proof verification — FREE via Labs API, self-hostable |
+| DeepSeek-Prover-V2 | Math reasoning — FREE on HuggingFace |
+| GitHub MCP | Tool integration — FREE (uses existing GitHub token) |
+| Tach | Code structure analysis — FREE (pip install) |
+| Code-review-graph | Structural code map — FREE (pip install) |
+| super-smoke-test | Runtime verification — FREE (custom JSON config) |
 
 ---
 

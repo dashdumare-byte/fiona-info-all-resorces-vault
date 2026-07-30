@@ -228,15 +228,91 @@ Already confirmed working, lazy-load on demand:
 
 ---
 
-## A2A Protocol + Code Mode
+## A2A Protocol (Google's Agent-to-Agent Standard)
 
-**A2A** (Google's Agent-to-Agent protocol) handles WHO talks to WHO.
-**Code Mode** handles HOW tools are loaded and executed.
+**A2A** is Google's open protocol for agent-to-agent communication. v1.0 stable spec released March 2026. 150+ organizations supporting (Microsoft, SAP, Salesforce, etc.). Apache 2.0 license.
 
-Together:
-- A2A: Agent A discovers Agent B's capabilities via `/.well-known/agent.json`
-- Code Mode: Agent A lazy-loads only the connectors needed for that interaction
-- Result: Inter-agent communication without loading every possible tool
+```bash
+pip install a2a-sdk  # FREE
+```
+
+### How A2A Works
+
+```
+Agent A wants to delegate a task
+    |
+    v
+Discovers Agent B via `/.well-known/agent.json` (Agent Card)
+    |
+    v
+Agent Card reveals: capabilities, auth requirements, endpoint URL
+    |
+    v
+Agent A sends structured task request to Agent B
+    |
+    v
+Agent B executes, returns structured result
+    |
+    v
+Agent A continues with result
+```
+
+### Agent Cards (Capability Discovery)
+
+Every agent exposes an Agent Card at `/.well-known/agent.json`:
+
+```json
+{
+  "name": "fiona-dcc-blender",
+  "description": "Blender 5.2.0 headless rendering and bpy automation",
+  "url": "https://fiona.internal/agents/blender",
+  "capabilities": {
+    "render": "Render scenes headless with CYCLES/Eevee",
+    "export": "Export to USD/FBX/OBJ",
+    "material": "Create and apply PBR materials"
+  },
+  "auth": {
+    "type": "OAuth2",
+    "scope": "dcc:blender"
+  }
+}
+```
+
+### A2A + Code Mode Together
+
+| Layer | Handles | Implementation |
+|-------|---------|---------------|
+| **A2A** | WHO talks to WHO | Agent Cards at `/.well-known/agent.json` |
+| **Code Mode** | HOW tools are loaded | Lazy-loaded typed imports |
+| **Together** | Efficient inter-agent comms | Discover via A2A → Load via Code Mode |
+
+**Example:**
+```typescript
+// A2A discovers Blender agent's capabilities
+const blenderCard = await a2a.discover("fiona.internal/agents/blender");
+
+// Code Mode lazy-loads only the Blender connector
+import { blenderAdapter } from "./connectors/dcc/blender.ts";
+
+// Execute the task
+const result = await blenderAdapter.render({file: "scene.blend"});
+```
+
+### FIONA Use Cases
+
+| Scenario | A2A Role | Code Mode Role |
+|----------|----------|----------------|
+| Supervisor delegates to subagent | Discovers subagent capabilities | Loads subagent's tools |
+| DCC operators discover each other | Agent Cards expose DCC capabilities | Lazy-load cross-DCC connectors |
+| Runtime: Client project multi-agent | Orchestrator discovers all agents | Each agent loads only its tools |
+| Build: 8 models research independently | Research agents share findings | Research tools lazy-loaded per phase |
+
+### Security: OAuth 2.0 + Signed Agent Cards
+
+- All Agent Cards are cryptographically signed
+- OAuth 2.0 for authentication between agents
+- Agent Cards expose ONLY necessary capabilities (principle of least privilege)
+- Capability scopes prevent unauthorized access
 
 See: [[Smart Routing]] for agent-to-agent routing logic.
 

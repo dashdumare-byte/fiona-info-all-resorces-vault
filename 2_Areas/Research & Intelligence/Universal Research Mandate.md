@@ -96,6 +96,29 @@ AEGIS-99 Research Consensus >=0.90?
 | GLM-5.1 | Deep coding — Python/C++ patterns (fallback) | Context7, GitHub MCP |
 | **Kimi K2.7** | Comprehensive — multi-step browse, web search, code interpreter | Tavily, Firecrawl |
 | **DeepSeek V4-Pro** | Code patterns — GitHub repos, Stack Overflow, community fixes | GitHub MCP, Exa |
+| **DeepResearcher** | **Autonomous deep research** — recursive browsing (3-4 levels), cross-verification (3+ sources), synthesis with citations. RL-trained in real web environment. | Web (recursive), Google Scholar, GitHub |
+
+### DeepResearcher — Autonomous Research Agent (GAIR-NLP)
+
+**4 Pillars of Deep Research:**
+
+| Pillar | What It Does | FIONA Application |
+|--------|-------------|-------------------|
+| **Expansion** | Turns 1 question into 20+ research angles (technical, financial, UX, competitive, contrarian) | Pre-adapter research: explores all API angles before build |
+| **Recursive Browsing** | Clicks links within links, 3-4 levels deep. Truth is often 4 clicks deep. | Finds API changes, community fixes, edge cases |
+| **Cross-Verification** | 1 source = unverified, 2 = possible, 3+ = high confidence, 3+ contradicting = controversial | Prevents hallucinated API documentation |
+| **Synthesis** | Executive summary + key findings (5-7) + contradictions flagged + confidence levels + gaps identified + actionable recommendations | Structured research briefs automatically |
+
+**Integration Options:**
+- **Option A:** Replace Kimi Agent with DeepResearcher for deeper research
+- **Option B (Recommended):** Use BOTH — Kimi for speed, DeepResearcher for depth on critical adapters
+- **Option C:** DeepResearcher verifies Kimi's research briefs (quality gate)
+
+**Where It Adds Value:**
+- Pre-DCC adapter research (30 min autonomous research before each adapter)
+- Architecture decision evidence gathering
+- Error recovery research (finds community fixes for Cursor gate failures)
+- Gap filling research (Risks 3, 6, 11 deep dives)
 
 ---
 
