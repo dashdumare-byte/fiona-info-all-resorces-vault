@@ -29,6 +29,68 @@ source: FIONA_v1.7_ARCHITECTURE_v4.1.txt Section 4
 - DCC gate validation
 - Visual design review
 
+## Claude "Managed Agents" — Persistent Read-Only Auditors
+
+> **Purpose:** Prevent Context Rot by maintaining a "shadow log" of every decision.
+
+### What They Do
+
+| Agent Type | Function | Trigger |
+|-----------|----------|---------|
+| **Shadow Logger** | Records every decision made by coding agents | Every supervisor action |
+| **Conflict Detector** | Compares generator output against FIONA Architecture | When DeepSeek/Codex suggests code |
+| **Supervisor Halt** | Pauses execution if conflict detected | Architecture mismatch found |
+| **Context Rot Monitor** | Tracks context window for degradation | Every 1000 tokens |
+
+### How It Works
+
+```
+Claude Code (Supervisor 1) proposes code change
+    |
+    v
+Managed Agent checks: Does this change conflict with FIONA_v1.7_ARCH.pdf?
+    |
+    +---> NO conflict → Allow execution
+    |
+    +---> CONFLICT detected → SUPERVISOR HALT
+                |
+                v
+        Log the conflict
+        Alert Ashandy: "Architecture conflict detected"
+        Pause execution until resolved
+        Suggest fix based on architecture doc
+```
+
+### Shadow Log Format
+
+```json
+{
+  "timestamp": "2026-07-28T14:30:00Z",
+  "supervisor": "claude-code",
+  "action": "proposed_code_change",
+  "module": "M27",
+  "file": "src/dcc/blender/adapter.py",
+  "decision": "Added bpy.ops.mesh.primitive_cube_add()",
+  "architecture_check": "PASS",
+  "conflicts": [],
+  "context_window_used": 45672,
+  "context_window_total": 200000
+}
+```
+
+### Managed Agent Rules
+1. **Read-only** — never modifies code, only audits
+2. **Persistent** — shadow log survives session restarts
+3. **Automatic** — runs on every supervisor action
+4. **Architecture-aligned** — checks against FIONA_v1.7_ARCH.pdf
+5. **Escalation on halt** — alerts Ashandy within 30 seconds
+
+### Integration
+- Runs as part of Claude Code supervisor
+- Shadow log stored in `.claude/shadow_log.jsonl`
+- Part of AEGIS-99 audit trail
+- Can trigger F-GARP if conflicts are unresolvable
+
 ### Claude Code Subagents (Item 6 — 4 specialized subagents)
 | Subagent | Role | Trigger |
 |----------|------|---------|

@@ -44,6 +44,24 @@ These are documented failure modes from prior DCC adapter builds. Each adapter b
 
 ---
 
+## DCC License Costs (Purchase After Build — Day 31+)
+
+⚠️ **Do NOT purchase before build. Free/trial versions sufficient for build phase.**
+
+| DCC | License | Cost | When to Buy | Education Discount |
+|-----|---------|------|-------------|-------------------|
+| **DaVinci Resolve** | Studio | $295 one-time | Day 31+ | Blackmagic education program |
+| **Houdini** | Education | ~$75/year | Day 31+ | Verify student status |
+| **Nuke** | Education | ~$99/year | Day 31+ | Verify via Foundry |
+| **Cinema 4D** | — | Via SheerID | Day 31+ | Student verification required |
+| **Blender** | FREE | $0 | — | Always free |
+| **ComfyUI** | FREE | $0 | — | Open source |
+| **Unreal Engine** | FREE | $0 | — | Free until $1M revenue |
+
+**Total DCC license cost: ~$470 first year** (Resolve $295 + Houdini $75 + Nuke $99)
+
+---
+
 ## Batch Build Order
 
 ### Batch A (Days 4-5) — Rate: 2/day

@@ -72,6 +72,8 @@ last-modified: 2026-07-28
 - [[Cursor Composer 2.5 — Trap Door & Sandbox Architecture]] — Continuous auto-fix, sandbox-per-model
 - [[Session Start Protocol]] — 5-step session start (GitNexus, blast radius, primers)
 - [[Temporal.io — Workflow Orchestration]] — Durable execution for build + runtime workflows
+- [[Logic Bomb Fixes — The Big Three]] — Groundhog Day, Network Health, Idempotency
+- [[Additional Modules — Lebrov & Garrett Integration]] — 7 new modules (M70-M76)
 - [[Honest Assessment]] — Brutal reality check, probability of success
 
 ### Operations
